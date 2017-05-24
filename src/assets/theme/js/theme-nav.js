@@ -18,7 +18,9 @@ $(function () {
                 $('html,body').animate({
                     scrollTop: target.offset().top
                 }, 1000);
-                $("#menu-close").trigger("click");
+                if ($('#sidebar-wrapper').hasClass("active")) {
+                    $("#menu-close").trigger("click");
+                }
                 return false;
             }
         }
