@@ -1,14 +1,14 @@
 import {FonzoAppPage} from "./app.po";
 
-describe('fonzo-app App', function () {
-    let page: FonzoAppPage;
+describe('fonzo-app App', () => {
+  let page: FonzoAppPage;
 
-    beforeEach(() => {
-        page = new FonzoAppPage();
-    });
+  beforeEach(() => {
+    page = new FonzoAppPage();
+  });
 
-    it('should display message saying app works', () => {
-        page.navigateTo();
-        expect(page.getParagraphText()).toEqual('app works!');
-    });
+  it('should display message saying app works', () => {
+    page.navigateTo();
+    expect(page.getParagraphText()).toEqual('app works!');
+  });
 });
