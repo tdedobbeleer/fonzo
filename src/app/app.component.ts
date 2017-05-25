@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 import {TranslationService} from "./services/translation.service";
 
 @Component({
@@ -6,10 +6,11 @@ import {TranslationService} from "./services/translation.service";
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
     private en: Lang = {locale: 'en', display: 'English'};
     private nl: Lang = {locale: 'nl', display: 'Nederlands'};
+    private es: Lang = {locale: 'es', display: 'Spanish'};
 
     constructor(private _translate: TranslationService) {
     }
