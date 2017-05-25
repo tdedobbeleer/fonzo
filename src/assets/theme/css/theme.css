@@ -53,8 +53,8 @@ body {
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
-    color: #333;
-    background-color: rgba(255, 255, 255, 0.8);
+    color: grey;
+    background-color: white;
 }
 
 /* Custom Horizontal Rule */
@@ -73,7 +73,7 @@ hr.small {
     height: 100%;
     transform: translateX(250px);
     overflow-y: auto;
-    background: #222;
+    background: whitesmoke;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -103,8 +103,8 @@ hr.small {
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
+    color: grey;
+    background: white;
 }
 
 .sidebar-nav li a:active,
@@ -123,7 +123,7 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
+    color: black;
     background: none;
 }
 
