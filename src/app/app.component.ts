@@ -8,26 +8,15 @@ import {TranslationService} from "./services/translation.service";
 })
 export class AppComponent implements OnInit {
 
-    private en: Lang = {locale: 'en', display: 'English'};
-    private nl: Lang = {locale: 'nl', display: 'Nederlands'};
-    private es: Lang = {locale: 'es', display: 'Spanish'};
-
     constructor(private _translate: TranslationService) {
     }
 
     ngOnInit() {
-        this.selectLang(this.nl);
+      this.selectLang("es");
     }
 
-    selectLang(lang: Lang) {
+  selectLang(lang: string) {
         // set default;
-        this._translate.use(lang.locale);
+    this._translate.use(lang);
     }
-}
-
-export interface Lang {
-    locale?: string;
-
-    display?: string;
-
 }

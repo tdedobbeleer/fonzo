@@ -1,5 +1,10 @@
 <!-- Navigation -->
 <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<span id="language-toggle">
+  <span (click)="selectLang('es')" class="lang-lg" lang="es"></span>&nbsp;
+  <span (click)="selectLang('en')" class="lang-lg" lang="en"></span>&nbsp;
+  <span (click)="selectLang('nl')" class="lang-lg" lang="nl"></span>
+</span>
 <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
@@ -25,9 +30,9 @@
 <header id="top" class="header">
     <div class="text-vertical-center">
         <h1>Fonzo</h1>
-        <h3>Cosy bar in Malaga</h3>
+      <h3>{{'text.home.description' | translate}}</h3>
         <br>
-        <a href="#contact" class="btn btn-dark btn-lg slide-nav">Where are we at?</a>
+      <a href="#contact" class="btn btn-dark btn-lg slide-nav">{{'text.home.where' | translate}}</a>
     </div>
 </header>
 
