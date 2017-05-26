@@ -19,6 +19,7 @@
     <link href="assets/theme/css/theme.css" rel="stylesheet">
     <!-- Pre component css -->
     <link href="assets/css/pre-component.css" rel="stylesheet">
+  <link href="assets/css/loading.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -36,10 +37,13 @@
 </head>
 <body>
 <app-root>
-  <div class="text-center">
-        <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
-        <div>Something witty for your userbase</div>
+  <header id="top" class="header overlay">
+    <div class="text-vertical-center">
+      <img src="assets/img/loading-logo-tp.png" class="ld ld-heartbeat">
+      <h4>Loading..</h4>
     </div>
+  </header>
+
 </app-root>
 
 <!-- jQuery -->
