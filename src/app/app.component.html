@@ -29,10 +29,6 @@
 <!-- Header -->
 <header id="top" class="header">
     <div class="text-vertical-center">
-        <h1>Fonzo</h1>
-      <h3>{{'text.home.description' | translate}}</h3>
-        <br>
-      <a href="#contact" class="btn btn-dark btn-lg slide-nav">{{'text.home.where' | translate}}</a>
     </div>
 </header>
 
@@ -53,45 +49,65 @@
 <!-- Callout -->
 <aside class="callout">
     <div class="text-vertical-center">
-        <h1>Vertically Centered Text</h1>
+
     </div>
 </aside>
 
 <!-- Portfolio -->
-<section id="portfolio" class="portfolio">
+<section id="atmosphere" class="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h2>Our Work</h2>
-                <hr class="small">
-                <div class="row">
-                    <div class="col-md-6 col-xs-12">
-                        <div class="portfolio-item">
-                            <img class="img-portfolio img-responsive" src="../assets/img/food1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="portfolio-item">
-                            <img class="img-portfolio img-responsive" src="../assets/img/food2.jpg">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="portfolio-item">
-                            <img class="img-portfolio img-responsive" src="../assets/img/food3.jpg">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="portfolio-item">
-                            <img class="img-portfolio img-responsive" src="../assets/img/food4.jpg">
-                        </div>
-                    </div>
-                </div>
+              <h2>Our Work</h2>
+              <hr class="small">
+              <carousel>
+                <slide>
+                  <img src="assets/img/food1.jpg" alt="food1" class="card-slide">
+                </slide>
+                <slide>
+                  <img src="assets/img/atmosphere1.jpg" alt="atmosphere1" class="card-slide">
+                </slide>
+              </carousel>
             </div>
             <!-- /.col-lg-10 -->
         </div>
         <!-- /.row -->
     </div>
     <!-- /.container -->
+</section>
+
+<!-- Portfolio -->
+<section id="card" class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h2>Our Work</h2>
+        <hr class="small">
+        <div class="row">
+          <div class="col-md-12 col-xs-12">
+            <div class="portfolio-item">
+              <img class="img-portfolio img-responsive" src="assets/img/card1.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="portfolio-item">
+                <img class="img-portfolio img-responsive" src="assets/img/card3.jpg">
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="portfolio-item">
+                <img class="img-portfolio img-responsive" src="assets/img/card4.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-lg-10 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
 </section>
 
 <!-- Map -->

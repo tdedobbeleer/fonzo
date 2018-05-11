@@ -4,6 +4,7 @@ import {FormsModule} from "@angular/forms";
 import {AppComponent} from "./app.component";
 import {TranslationService} from "./services/translation.service";
 import {TranslationPipe} from "./pipes/translation.pipe";
+import {CarouselModule} from "ngx-bootstrap";
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import {TranslationPipe} from "./pipes/translation.pipe";
   imports: [
     BrowserModule,
     FormsModule,
+    CarouselModule.forRoot(),
   ],
   providers: [TranslationService],
   bootstrap: [AppComponent]
