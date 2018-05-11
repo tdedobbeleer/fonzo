@@ -67,6 +67,7 @@ hr.small {
 .card-slide {
   display: block;
   width: 100%;
+  cursor: zoom-in;
 }
 
 .right.carousel-control, .left.carousel-control {
@@ -265,7 +266,7 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+  padding: 20px 0;
 }
 
 #to-top {
@@ -273,4 +274,9 @@ footer {
     position: fixed;
     bottom: 5px;
     right: 5px;
+}
+
+/* Modal */
+.modal-image {
+  margin: auto;
 }
