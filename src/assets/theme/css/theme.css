@@ -26,12 +26,12 @@ body {
 }
 
 .bordered {
-  border: 10px solid transparent;
-  padding: 15px;
-  -webkit-border-image: url(../img/border.png) 30 round; /* Safari 3.1-5 */
-  -o-border-image: url(../img/border.png) 30 round; /* Opera 11-12.1 */
-  border-image: url(../img/border.png) 30 round;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 192, 0, 1)) round;
+  border-image-slice: 1;
 }
+
 
 .text-vertical-center {
     display: table-cell;
