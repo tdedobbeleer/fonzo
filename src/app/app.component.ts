@@ -12,11 +12,29 @@ export class AppComponent implements OnInit {
   modalRef: BsModalRef;
   modalImage: any;
 
+  private nl: string = "nl";
+  private en: string = "en";
+  private es: string = "es";
+
+
   constructor(private _translate: TranslationService, private _modalService: BsModalService) {
     }
 
     ngOnInit() {
-      this.selectLang("nl");
+      let currentLang = navigator.language || this.en;
+      console.log(currentLang);
+      if (currentLang.startsWith(this.en)) {
+        currentLang = this.en;
+      } else if (currentLang.startsWith(this.nl)) {
+        currentLang = this.nl;
+      } else if (currentLang.startsWith(this.es)) {
+        currentLang = this.es;
+      }
+      else {
+        currentLang = this.en;
+      }
+
+      this.selectLang(currentLang);
     }
 
   openModal(template: TemplateRef<any>, event: Event) {
