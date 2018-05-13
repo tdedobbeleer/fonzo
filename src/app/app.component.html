@@ -12,11 +12,6 @@
 
 <!-- Navigation -->
 <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-<span id="language-toggle">
-  <span (click)="selectLang('es')" class="lang-lg" lang="es"></span>&nbsp;
-  <span (click)="selectLang('en')" class="lang-lg" lang="en"></span>&nbsp;
-  <span (click)="selectLang('nl')" class="lang-lg" lang="nl"></span>
-</span>
 <nav id="sidebar-wrapper">
   <ul class="sidebar-nav">
     <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
@@ -35,6 +30,14 @@
     <li>
       <a href="#contact" class="slide-nav">Contact</a>
     </li>
+    <li class="slide-nav">
+      <a href="#">
+        <span class="fa fa-globe" style="display: inline"></span>&nbsp;
+        <span (click)="selectLang('es')">ES</span>&nbsp;|&nbsp;
+        <span (click)="selectLang('en')">EN</span>&nbsp;|&nbsp;
+        <span (click)="selectLang('nl')">NL</span>
+      </a>
+    </li>
   </ul>
 </nav>
 
@@ -48,12 +51,12 @@
 <section id="about" class="about">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <div class="col-sm-3 col-xs-12"><img src="assets/img/milk.jpg"/></div>
+      <div class="col-lg-12 text-center bordered">
+        <div class="col-sm-3 col-xs-12"><img src="assets/img/star.png"/></div>
         <div class="col-sm-6 col-xs-12">
           <h2>{{'title.about' | translate}}</h2>
         </div>
-        <div class="col-sm-3 hidden-xs"><img src="assets/img/fish.jpg"/></div>
+        <div class="col-sm-3 hidden-xs"><img src="assets/img/star.png"/></div>
       </div>
     </div>
     <div class="row">
@@ -80,11 +83,11 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <div class="row">
-          <div class="col-sm-3 col-xs-12"><img src="assets/img/fish.jpg"/></div>
+          <div class="col-sm-3 col-xs-12"><img src="assets/img/beer.png"/></div>
           <div class="col-sm-6 col-xs-12">
             <h2>{{'title.food' | translate}}</h2>
           </div>
-          <div class="col-sm-3 hidden-xs"><img src="assets/img/egg.jpg"/></div>
+          <div class="col-sm-3 hidden-xs"><img src="assets/img/wine.png"/></div>
         </div>
 
         <div class="row">

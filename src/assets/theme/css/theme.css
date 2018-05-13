@@ -4,6 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+/* Font */
+@font-face {
+  font-family: 'BAUHS93';
+  src: url('../fonts/BAUHS93.eot');
+  src: local('BAUHS93'), url('../fonts/BAUHS93.woff') format('woff'), url('../fonts/BAUHS93.ttf') format('truetype');
+}
+
+/* Font downloaded from FontsForWeb.com */
+
 /* Global Styles */
 
 html,
@@ -13,7 +22,15 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'BAUHS93', "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bordered {
+  border: 10px solid transparent;
+  padding: 15px;
+  -webkit-border-image: url(../img/border.png) 30 round; /* Safari 3.1-5 */
+  -o-border-image: url(../img/border.png) 30 round; /* Opera 11-12.1 */
+  border-image: url(../img/border.png) 30 round;
 }
 
 .text-vertical-center {
@@ -27,6 +44,14 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
+}
+
+h2, h4 {
+  color: #ffc000;
+}
+
+.lead, footer {
+  font-family: calibri, Helvetica, Arial, sans-serif;
 }
 
 /* Custom Button Styles */
@@ -60,7 +85,8 @@ body {
 /* Custom Horizontal Rule */
 
 hr.small {
-    max-width: 100px;
+  max-width: 100px;
+  color: #fff200;
 }
 
 /* Custom carousel css */
@@ -155,6 +181,7 @@ hr.small {
   top: 0;
   left: 0;
   margin: 5px;
+
 }
 
 #language-toggle > span {
