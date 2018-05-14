@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit() {
-      let currentLang = navigator.language || this.en;
+      let currentLang = localStorage.getItem('lang') || navigator.language || this.en;
       console.log(currentLang);
       if (currentLang.startsWith(this.en)) {
         currentLang = this.en;
@@ -34,6 +34,7 @@ export class AppComponent implements OnInit {
         currentLang = this.en;
       }
 
+      localStorage.setItem('lang', currentLang);
       this.selectLang(currentLang);
     }
 
@@ -47,6 +48,7 @@ export class AppComponent implements OnInit {
 
   selectLang(lang: string) {
     // set default;
+    localStorage.setItem('lang', lang);
     this._translate.use(lang);
     }
 }

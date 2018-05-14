@@ -11,19 +11,21 @@ $(function () {
     });
     // Scrolls to the selected menu item on the page
     $('.slide-nav').click(function () {
+      if (!$(this).hasClass('no-link')) {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                if ($('#sidebar-wrapper').hasClass("active")) {
-                    $("#menu-close").trigger("click");
-                }
-                return false;
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            if ($('#sidebar-wrapper').hasClass("active")) {
+              $("#menu-close").trigger("click");
             }
+            return false;
+          }
         }
+      }
     });
 });
 //#to-top button appears after scrolling

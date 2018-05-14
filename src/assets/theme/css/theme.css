@@ -188,6 +188,10 @@ hr.small {
   cursor: pointer;
 }
 
+.lang-select {
+  cursor: pointer;
+}
+
 #sidebar-wrapper.active {
     right: 250px;
     width: 250px;
