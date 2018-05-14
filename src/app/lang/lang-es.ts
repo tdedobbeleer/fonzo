@@ -9,6 +9,7 @@ export const LANG_ES_TRANS = {
   'nav.home': 'Home',
   'nav.food': 'Bebidas y tapas',
   'nav.about': 'Sobre nosotros',
+  'nav.contact': 'Contacto',
   'title.food': 'Bebidas y tapas',
   'text.food': 'In hac habitasse platea dictumst. Etiam at tempor justo. Morbi convallis lectus nunc, a suscipit dolor accumsan non. Maecenas sed ante a mauris suscipit consequat ac ac nisl. Quisque dictum risus lacus, sit amet rhoncus diam tincidunt vel. Curabitur justo neque, congue ut neque non, ornare tristique dolor. Cras congue imperdiet sapien sed eleifend. Nulla bibendum mattis tellus, eget ornare est blandit eu. Duis et dui porttitor, accumsan nisl egestas, consequat neque. Nullam non dui venenatis, dictum magna ut, sagittis leo. Sed convallis auctor dui, vitae lobortis sem luctus vitae. Fusce et mattis quam.',
   'title.about': "Sobre nosotros",
