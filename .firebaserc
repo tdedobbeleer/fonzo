@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "fonzo-test",
+    "p": "fonzo-prod"
+  }
+}
