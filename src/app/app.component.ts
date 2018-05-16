@@ -22,7 +22,6 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
       let currentLang = localStorage.getItem('lang') || navigator.language || this.en;
-      console.log(currentLang);
       if (currentLang.startsWith(this.en)) {
         currentLang = this.en;
       } else if (currentLang.startsWith(this.nl)) {
@@ -36,6 +35,17 @@ export class AppComponent implements OnInit {
 
       localStorage.setItem('lang', currentLang);
       this.selectLang(currentLang);
+
+      console.log("" +
+        "               _______.\n" +
+        "    ______    | .   . |\\\n" +
+        "   /     /\\   |   .   |.\\\n" +
+        "  /  '  /  \\  | .   . |.'|\n" +
+        " /_____/. . \\ |_______|.'|\n" +
+        " \\ . . \\    /  \\ ' .   \\'|\n" +
+        "  \\ . . \\  /    \\____'__\\|\n" +
+        "   \\_____\\/ " +
+        "\n\nCreated by Tom De Dobbeleer (https://github.com/tdedobbeleer)")
     }
 
   openModal(template: TemplateRef<any>, event: Event) {
