@@ -295,12 +295,12 @@ hr.small {
 /* Map */
 
 .map {
-    height: 500px;
+  height: 400px;
 }
 
 @media (max-width: 768px) {
     .map {
-        height: 75%;
+      height: 40%;
     }
 }
 
