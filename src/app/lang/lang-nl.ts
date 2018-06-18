@@ -19,7 +19,7 @@ export const LANG_NL_TRANS = {
   'Al jaren zijn we gepassioneerd door lekker en gezond eten en we willen dat iedereen kan genieten\n' +
   'aan een betaalbare prijs.<br/><br/>' +
   'Fonzo is een kleurrijke, eigenzinnige, verrassende ruimte vol snuisterijen waar er telkens iets te\n' +
-  'ontdekken valt. De naam van de bar is een ode aan onze te jong gestorven vader (Fons De Dobbeleer) - Hij waakt nog\n' +
+  'ontdekken valt. De naam van de bar is een ode aan onze te jong gestorven (schoon)vader Fons De Dobbeleer - Hij waakt nog\n' +
   'steeds over de bar met zijn foto aan de ingang.',
   'text.monday': "Maandag",
   'text.tuesday': "Dinsdag",
