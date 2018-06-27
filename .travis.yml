@@ -20,8 +20,8 @@ script: # the build step
 after_success:
   - firebase use default --token $FIREBASE_TOKEN --non-interactive
   - firebase deploy --only hosting --token $FIREBASE_TOKEN --non-interactive # test build
-  - firebase use p --token $FIREBASE_TOKEN --non-interactive
-  - firebase deploy --only hosting --token $FIREBASE_TOKEN --non-interactive # prod build
+  - test $TRAVIS_BRANCH = "master" && firebase use p --token $FIREBASE_TOKEN --non-interactive
+  - test $TRAVIS_BRANCH = "master" && firebase deploy --only hosting --token $FIREBASE_TOKEN --non-interactive # prod build
 
 notifications:
   email: # only receive email when the build status changes (someone broke the build!)
