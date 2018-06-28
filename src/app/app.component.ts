@@ -3,6 +3,7 @@ import {TranslationService} from "./services/translation.service";
 import {BsModalService} from 'ngx-bootstrap/modal';
 import {BsModalRef} from 'ngx-bootstrap/modal/bs-modal-ref.service';
 import {PROPERTIES} from "./properties";
+import {Title} from "@angular/platform-browser";
 
 @Component({
     selector: 'app-root',
@@ -17,7 +18,7 @@ export class AppComponent implements OnInit {
   private en: string = "en";
   private es: string = "es";
 
-  constructor(private _translate: TranslationService, private _modalService: BsModalService) {
+  constructor(private titleService: Title, private _translate: TranslationService, private _modalService: BsModalService) {
   }
 
   ngOnInit() {
@@ -35,6 +36,9 @@ export class AppComponent implements OnInit {
 
     localStorage.setItem('lang', this.currentLang);
     this.selectLang(this.currentLang);
+
+    //Set the title
+    this.titleService.setTitle(this.getProperty('title'));
 
     console.log("" +
       "               _______.\n" +
