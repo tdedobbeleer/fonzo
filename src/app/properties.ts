@@ -1,0 +1,22 @@
+export const PROPERTIES = {
+  'title': 'Fonzo, Comida Casera',
+  'address.line.1': 'Calle Mariblanca 4',
+  'address.line.2': '29012 Málaga, Spain',
+  'tel': '+34 653 20 35 86',
+  'email': 'fonzomalaga@gmail.com',
+  'facebook': 'https://www.facebook.com/fonzomalaga/',
+  'instagram': 'https://www.instagram.com/fonzomalaga/',
+  'map': 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.9215589477885!2d-4.42244498471226!3d36.724445079964326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7bf07bccf93%3A0x1275bcd023df0785!2sCalle+Mariblanca%2C+4%2C+29012+M%C3%A1laga%2C+Spanje!5e0!3m2!1snl!2sbe!4v1526496334857',
+  'carousel-images': [
+    'assets/img/food1.jpg',
+    'assets/img/card4.jpg',
+    'assets/img/atmosphere1.jpg',
+    'assets/img/card5.jpg',
+    'assets/img/atmosphere2.jpg',
+    'assets/img/card1.jpg',
+    'assets/img/food2.jpg',
+    'assets/img/atmosphere3.jpg',
+    'assets/img/card6.jpg',
+    'assets/img/atmosphere4.jpg',
+  ],
+};

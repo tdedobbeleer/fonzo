@@ -33,9 +33,9 @@
     <li class="slide-nav no-link">
       <a>
         <span class="fa fa-globe" style="display: inline"></span>&nbsp;
-        <span (click)="selectLang('es')" class="lang-select">ES</span>&nbsp;|&nbsp;
-        <span (click)="selectLang('en')" class="lang-select">EN</span>&nbsp;|&nbsp;
-        <span (click)="selectLang('nl')" class="lang-select">NL</span>
+        <span (click)="selectLang('es')" [ngClass]="{'lang-select' : true, 'active' : currentLang == 'es'}">ES</span>&nbsp;|&nbsp;
+        <span (click)="selectLang('en')" [ngClass]="{'lang-select' : true, 'active' : currentLang == 'en'}">EN</span>&nbsp;|&nbsp;
+        <span (click)="selectLang('nl')" [ngClass]="{'lang-select' : true, 'active' : currentLang == 'nl'}">NL</span>
       </a>
     </li>
   </ul>
@@ -63,7 +63,7 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <hr class="small">
-        <div class="lead" innerHTML="{{'text.about' | translate}}"></div>
+        <div class="lead" [innerHTML]="'text.about' | translate"></div>
       </div>
     </div>
     <!-- /.row -->
@@ -95,73 +95,16 @@
         <div class="row">
           <div class="col-md-12">
             <hr class="small">
-            <div class="lead" innerHTML="{{'text.food' | translate}}"></div>
+            <div class="lead" [innerHTML]="'text.food' | translate"></div>
             <br>
           </div>
         </div>
 
-        <!--
-
-        <div class="row">
-          <div class="col-md-3 col-xs-12">
-            <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="assets/img/card3.jpg" (click)="openModal(template, $event)">
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12">
-            <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="assets/img/card1.jpg" (click)="openModal(template, $event)">
-            </div>
-          </div>
-          <div class="col-md-3 col-xs-12">
-            <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="assets/img/card4.jpg"
-                   (click)="openModal(template, $event)">
-            </div>
-          </div>
-        </div>
-      </div>
-      -->
-
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 text-center">
             <carousel [noPause]="false" [interval]="0">
-              <slide>
-                <img src="assets/img/food1.jpg" alt="food1" class="card-slide" (click)="openModal(template, $event)">
-              </slide>
-              <slide>
-                <img src="assets/img/card4.jpg" alt="card4" class="card-slide"
-                     (click)="openModal(template, $event)">
-              </slide>
-              <slide>
-                <img src="assets/img/atmosphere1.jpg" alt="atmosphere1" class="card-slide"
-                     (click)="openModal(template, $event)">
-              </slide>
-              <slide>
-                <img src="assets/img/card5.jpg" alt="card5" class="card-slide"
-                     (click)="openModal(template, $event)">
-              </slide>
-              <slide>
-                <img src="assets/img/atmosphere2.jpg" alt="atmosphere1" class="card-slide"
-                     (click)="openModal(template, $event)">
-              </slide>
-              <slide>
-                <img src="assets/img/card1.jpg" alt="card1" class="card-slide" (click)="openModal(template, $event)">
-              </slide>
-              <slide>
-                <img src="assets/img/food2.jpg" alt="food2" class="card-slide" (click)="openModal(template, $event)">
-              </slide>
-              <slide>
-                <img src="assets/img/atmosphere3.jpg" alt="atmosphere1" class="card-slide"
-                     (click)="openModal(template, $event)">
-              </slide>
-              <slide>
-                <img src="assets/img/card6.jpg" alt="card6" class="card-slide"
-                     (click)="openModal(template, $event)">
-              </slide>
-              <slide>
-                <img src="assets/img/atmosphere4.jpg" alt="atmosphere1" class="card-slide"
-                     (click)="openModal(template, $event)">
+              <slide *ngFor="let image of getProperty('carousel-images')">
+                <img [src]="image | safe" class="card-slide" (click)="openModal(template, $event)">
               </slide>
             </carousel>
           </div>
@@ -174,44 +117,11 @@
   <!-- /.container -->
 </section>
 
-<!-- Portfolio
-<section id="atmosphere" class="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <div class="row">
-          <div class="col-sm-3"><img src="assets/img/egg.jpg"/></div>
-          <div class="col-sm-6">
-            <h2>{{'title.atmosphere' | translate}}</h2>
-          </div>
-          <div class="col-sm-3 hidden-xs"><img src="assets/img/shell.jpg"/></div>
-        </div>
-        <hr class="small">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-lg-offset-3 text-center">
-        <carousel>
-          <slide>
-            <img src="assets/img/food1.jpg" alt="food1" class="card-slide">
-          </slide>
-          <slide>
-            <img src="assets/img/atmosphere1.jpg" alt="atmosphere1" class="card-slide">
-          </slide>
-        </carousel>
-      </div>
-    </div>
-  </div>
-
-</section>
--->
-
-
 <!-- Map -->
 <section id="contact" class="map">
   <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border:0"
           allowfullscreen
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.9215589477885!2d-4.42244498471226!3d36.724445079964326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7bf07bccf93%3A0x1275bcd023df0785!2sCalle+Mariblanca%2C+4%2C+29012+M%C3%A1laga%2C+Spanje!5e0!3m2!1snl!2sbe!4v1526496334857"></iframe>
+          [src]="getProperty('map') | safe"></iframe>
 </section>
 
 <div class="checkered"></div>
@@ -220,25 +130,24 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 text-center">
-        <h4><strong>Fonzo, Comida Casera</strong>
+        <h4><strong>{{getProperty('title')}}</strong>
         </h4>
-        <p>Calle Mariblanca 4
-          <br/>29012 Málaga, Spain</p>
+        <p>{{getProperty('address.line.1')}}<br/>{{getProperty('address.line.2')}}</p>
         <ul class="list-unstyled">
-          <li><i class="fa fa-phone fa-fw"></i>&nbsp;<a rel="nofollow" href="tel:+34653203586">+34 653 20 35 86</a></li>
-          <li><i class="fa fa-envelope-o fa-fw"></i> <a rel="nofollow" href="mailto:fonzomalaga@gmail.com">fonzomalaga@gmail
-            .com</a>
+          <li><i class="fa fa-phone fa-fw"></i>&nbsp;<a rel="nofollow" [href]="'tel:' + getProperty('tel') | safe">{{getProperty('tel')}}</a>
+          </li>
+          <li><i class="fa fa-envelope-o fa-fw"></i> <a rel="nofollow" [href]="'mailto:' + getProperty('email') | safe">{{getProperty('email')}}</a>
           </li>
         </ul>
         <br>
         <div class="col-md-12">
           <ul class="list-inline">
             <li>
-              <a href="https://www.facebook.com/fonzomalaga/"
+              <a [href]="getProperty('facebook')"
                  target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/fonzomalaga/" target="_blank"><i
+              <a [href]="getProperty('instagram')" target="_blank"><i
                 class="fa fa-instagram fa-fw fa-3x"></i></a>
             </li>
           </ul>

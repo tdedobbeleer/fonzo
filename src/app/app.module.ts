@@ -5,11 +5,13 @@ import {AppComponent} from "./app.component";
 import {TranslationService} from "./services/translation.service";
 import {TranslationPipe} from "./pipes/translation.pipe";
 import {BsDropdownModule, CarouselModule, ModalModule} from "ngx-bootstrap";
+import {SafePipe} from "./pipes/safe.pipe";
 
 @NgModule({
   declarations: [
     AppComponent,
-    TranslationPipe
+    TranslationPipe,
+    SafePipe,
   ],
   imports: [
     BrowserModule,
