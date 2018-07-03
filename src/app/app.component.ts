@@ -4,6 +4,7 @@ import {BsModalService} from 'ngx-bootstrap/modal';
 import {BsModalRef} from 'ngx-bootstrap/modal/bs-modal-ref.service';
 import {PROPERTIES} from "./properties";
 import {Title} from "@angular/platform-browser";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
     selector: 'app-root',
@@ -18,24 +19,26 @@ export class AppComponent implements OnInit {
   private en: string = "en";
   private es: string = "es";
 
-  constructor(private titleService: Title, private _translate: TranslationService, private _modalService: BsModalService) {
+  constructor(private titleService: Title, private _translate: TranslationService, private _modalService: BsModalService, private _activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.currentLang = localStorage.getItem('lang') || navigator.language || this.en;
-    if (this.currentLang.startsWith(this.en)) {
-      this.currentLang = this.en;
-    } else if (this.currentLang.startsWith(this.nl)) {
-      this.currentLang = this.nl;
-    } else if (this.currentLang.startsWith(this.es)) {
-      this.currentLang = this.es;
-    }
-    else {
-      this.currentLang = this.en;
-    }
+    this._activatedRoute.queryParams.subscribe(params => {
+      this.currentLang = params['lang'] || localStorage.getItem('lang') || navigator.language || this.en;
+      if (this.currentLang.startsWith(this.en)) {
+        this.currentLang = this.en;
+      } else if (this.currentLang.startsWith(this.nl)) {
+        this.currentLang = this.nl;
+      } else if (this.currentLang.startsWith(this.es)) {
+        this.currentLang = this.es;
+      }
+      else {
+        this.currentLang = this.en;
+      }
 
-    localStorage.setItem('lang', this.currentLang);
-    this.selectLang(this.currentLang);
+      localStorage.setItem('lang', this.currentLang);
+      this.selectLang(this.currentLang);
+    });
 
     //Set the title
     this.titleService.setTitle(this.getProperty('title'));

@@ -6,6 +6,11 @@ import {TranslationService} from "./services/translation.service";
 import {TranslationPipe} from "./pipes/translation.pipe";
 import {BsDropdownModule, CarouselModule, ModalModule} from "ngx-bootstrap";
 import {SafePipe} from "./pipes/safe.pipe";
+import {RouterModule, Routes} from "@angular/router";
+
+const appRoutes: Routes = [
+  {path: '', component: AppComponent},
+];
 
 @NgModule({
   declarations: [
@@ -19,6 +24,7 @@ import {SafePipe} from "./pipes/safe.pipe";
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
     BsDropdownModule.forRoot(),
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [TranslationService],
   bootstrap: [AppComponent]
