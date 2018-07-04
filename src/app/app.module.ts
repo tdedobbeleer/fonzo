@@ -10,6 +10,9 @@ import {RouterModule, Routes} from "@angular/router";
 
 const appRoutes: Routes = [
   {path: '', component: AppComponent},
+  {path: 'nl', redirectTo: '/?lang=nl'},
+  {path: 'en', redirectTo: '/?lang=en'},
+  {path: 'es', redirectTo: '/?lang=es'}
 ];
 
 @NgModule({
