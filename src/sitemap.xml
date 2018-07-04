@@ -2,14 +2,34 @@
 <urlset
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+  xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <!-- gemaakt met www.xml-sitemaps.nl -->
   <!-- aangeboden door www.metatags.nl -->
 
   <url>
-    <loc>https://www.fonzo.es</loc>
+    <loc>https://www.fonzo.es/es</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.fonzo.es"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.fonzo.es/en/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="nl"
+      href="https://www.fonzo.es/nl/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://www.fonzo.es/es/"
+    />
     <lastmod>2018-07-04</lastmod>
     <changefreq>monthly</changefreq>
 
