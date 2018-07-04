@@ -12,7 +12,10 @@ const appRoutes: Routes = [
   {path: '', component: AppComponent},
   {path: 'nl', redirectTo: '/?lang=nl'},
   {path: 'en', redirectTo: '/?lang=en'},
-  {path: 'es', redirectTo: '/?lang=es'}
+  {path: 'es', redirectTo: '/?lang=es'},
+  {path: 'contact', redirectTo: '/#contact'},
+  {path: 'about', redirectTo: '/#about'},
+  {path: 'menu', redirectTo: '/#menu'}
 ];
 
 @NgModule({
