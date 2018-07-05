@@ -132,7 +132,8 @@
       <div class="col-lg-10 col-lg-offset-1 text-center">
         <h4><strong>{{getProperty('title')}}</strong>
         </h4>
-        <p>{{getProperty('address.line.1')}}<br/>{{getProperty('address.line.2')}}</p>
+        <p>{{getProperty('address.street')}}<br/>{{getProperty('address.postal')}}&nbsp;{{getProperty('address.city')}},
+          {{getProperty('address.country')}}</p>
         <ul class="list-unstyled">
           <li><i class="fa fa-phone fa-fw"></i>&nbsp;<a rel="nofollow" [href]="'tel:' + getProperty('tel') | safe">{{getProperty('tel')}}</a>
           </li>
@@ -186,6 +187,7 @@
             <div class="col-xs-6 text-left">{{'text.closed' | translate}}</div>
           </div>
         </div>
+        <ngx-json-ld [json]="schema"></ngx-json-ld>
         <div class="col-md-12">
           <hr class="small">
         </div>

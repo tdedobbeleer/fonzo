@@ -1,7 +1,9 @@
 export const PROPERTIES = {
-  'title': 'Fonzo, Comida Casera',
-  'address.line.1': 'Calle Mariblanca 4',
-  'address.line.2': '29012 Málaga, Spain',
+  'title': 'Fonzo, Comida Casera - Málaga',
+  'address.street': 'Calle Mariblanca 4',
+  'address.city': 'Málaga',
+  'address.postal': '29012',
+  'address.country': 'Spain',
   'tel': '+34 653 20 35 86',
   'email': 'fonzomalaga@gmail.com',
   'facebook': 'https://www.facebook.com/fonzomalaga/',

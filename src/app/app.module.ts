@@ -7,6 +7,7 @@ import {TranslationPipe} from "./pipes/translation.pipe";
 import {BsDropdownModule, CarouselModule, ModalModule} from "ngx-bootstrap";
 import {SafePipe} from "./pipes/safe.pipe";
 import {RouterModule, Routes} from "@angular/router";
+import {NgxJsonLdModule} from '@ngx-lite/json-ld';
 
 const appRoutes: Routes = [
   {path: '', component: AppComponent},
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
     ModalModule.forRoot(),
     BsDropdownModule.forRoot(),
     RouterModule.forRoot(appRoutes),
+    NgxJsonLdModule
   ],
   providers: [TranslationService],
   bootstrap: [AppComponent]
