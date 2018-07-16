@@ -112,6 +112,7 @@ export class AppComponent implements OnInit {
         "postalCode": this.getProperty('address.postal'),
         "addressCountry": "ES"
       },
+      "openingHoursSpecification": this.getOpeningHoursSpecification(),
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 36.7244451,
@@ -122,5 +123,23 @@ export class AppComponent implements OnInit {
         this.getProperty("instagram")
       ]
     }
+  }
+
+  private getOpeningHoursSpecification() {
+    let array = [];
+    for (let day of this.days) {
+      let hours = this.getProperty("openinghours." + day);
+      if (hours.length > 0) {
+        for (let oh of hours) {
+          array.push({
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [day],
+            "opens": oh.open,
+            "closes": oh.closed
+          });
+        }
+      }
+    }
+    return array;
   }
 }

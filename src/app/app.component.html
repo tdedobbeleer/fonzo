@@ -161,8 +161,12 @@
           <div class="row" *ngFor="let day of days; let i = index" [class.bold]="isToday(i)">
             <div class="col-xs-6 text-right">{{'text.' + day | translate}}</div>
             <div class="col-xs-6 text-left">
-              <p class="openinghour" *ngFor="let hour of getProperty('openinghours.' + day)"
-                 [innerHtml]="hour | translate"></p>
+              <span *ngFor="let hour of getProperty('openinghours.' + day)">
+                <p class="openinghour">{{hour.open + '-' + hour.closed}}</p>
+              </span>
+              <span *ngIf="getProperty('openinghours.' + day) == 0" class="openinghour">
+                <p class="openinghour">{{'text.closed' | translate}}</p>
+              </span>
             </div>
           </div>
         </div>
