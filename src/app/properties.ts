@@ -21,4 +21,11 @@ export const PROPERTIES = {
     'assets/img/card6.jpg',
     'assets/img/atmosphere4.jpg',
   ],
+  'openinghours.monday': ['13:30-16:30', '19:30-00:00'],
+  'openinghours.tuesday': ['13:30-16:30', '19:30-00:00'],
+  'openinghours.wednesday': ['text.closed'],
+  'openinghours.thursday': ['13:30-16:30', '19:30-00:00'],
+  'openinghours.friday': ['13:30-16:30', '19:30-01:00'],
+  'openinghours.saturday': ['13:30-16:30', '19:30-01:00'],
+  'openinghours.sunday': ['text.closed'],
 };

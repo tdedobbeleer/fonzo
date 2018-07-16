@@ -330,3 +330,12 @@ footer {
 .modal-image {
   margin: auto;
 }
+
+/* Opening hours */
+.bold {
+  font-weight: bold;
+}
+
+.openinghour {
+  margin-bottom: 5px;
+}

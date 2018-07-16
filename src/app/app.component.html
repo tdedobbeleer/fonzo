@@ -158,33 +158,12 @@
           <h4><strong>{{'text.opening.hours' | translate}}</strong></h4>
         </div>
         <div class="col-md-12">
-          <div class="row">
-            <div class="col-xs-6 text-right">{{'text.monday' | translate}}</div>
-            <div class="col-xs-6 text-left">13:30-16:30<br/>19:30-00:00</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-6 text-right">{{'text.tuesday' | translate}}</div>
-            <div class="col-xs-6 text-left">13:30-16:30<br/>19:30-00:00</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-6 text-right">{{'text.wednesday' | translate}}</div>
-            <div class="col-xs-6 text-left">{{'text.closed' | translate}}</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-6 text-right">{{'text.thursday' | translate}}</div>
-            <div class="col-xs-6 text-left">13:30-16:30<br/>19:30-00:00</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-6 text-right">{{'text.friday' | translate}}</div>
-            <div class="col-xs-6 text-left">13:30-16:30<br/>19:30-01:00</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-6 text-right">{{'text.saturday' | translate}}</div>
-            <div class="col-xs-6 text-left">13:30-16:30<br/>19:30-01:00</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-6 text-right">{{'text.sunday' | translate}}</div>
-            <div class="col-xs-6 text-left">{{'text.closed' | translate}}</div>
+          <div class="row" *ngFor="let day of days; let i = index" [class.bold]="isToday(i)">
+            <div class="col-xs-6 text-right">{{'text.' + day | translate}}</div>
+            <div class="col-xs-6 text-left">
+              <p class="openinghour" *ngFor="let hour of getProperty('openinghours.' + day)"
+                 [innerHtml]="hour | translate"></p>
+            </div>
           </div>
         </div>
         <ngx-json-ld [json]="schema"></ngx-json-ld>

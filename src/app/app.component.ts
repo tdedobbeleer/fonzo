@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   modalImage: any;
   currentLang: string;
   schema: any;
+  days: any = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
   private nl: string = "nl";
   private en: string = "en";
   private es: string = "es";
@@ -47,7 +48,11 @@ export class AppComponent implements OnInit {
     localStorage.setItem('lang', lang);
     this.currentLang = lang;
     this._translate.use(lang);
-    }
+  }
+
+  isToday(day) {
+    return day == new Date().getDay() - 1;
+  }
 
   getProperty(key: string) {
     if (!key) return;
