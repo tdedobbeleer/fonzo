@@ -21,7 +21,7 @@ export const PROPERTIES = {
     'assets/img/card6.jpg',
     'assets/img/atmosphere4.jpg',
   ],
-  'openinghours.monday': [{'open': '13:30', 'closed': '16:30'}, {'open': '19:30', 'closed': '00:00'}],
+  'openinghours.monday': [{'open': '19:30', 'closed': '00:00'}],
   'openinghours.tuesday': [{'open': '13:30', 'closed': '16:30'}, {'open': '19:30', 'closed': '00:00'}],
   'openinghours.wednesday': [],
   'openinghours.thursday': [{'open': '13:30', 'closed': '16:30'}, {'open': '19:30', 'closed': '00:00'}],
