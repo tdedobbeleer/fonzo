@@ -2,6 +2,9 @@
 
 To run locally:
 
+
+`npm install` (first time)
+
 `npm start`
 
 To deploy to test:
