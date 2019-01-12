@@ -1,0 +1,159 @@
+/* Font */
+@font-face {
+    font-family: 'Bauhaus 93';
+    src: url('../fonts/Bauhaus93.eot');
+    src: local('Bauhaus 93'), local('Bauhaus93'),
+    url('../fonts/Bauhaus93.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Bauhaus93.woff2') format('woff2'),
+    url('../fonts/Bauhaus93.woff') format('woff'),
+    url('../fonts/Bauhaus93.ttf') format('truetype'),
+    url('../fonts/Bauhaus93.svg#Bauhaus93') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Bauhaus 93", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.quotes {
+    padding-top: 30px;
+}
+
+.checkered {
+    width: 100%;
+    height: 10px;
+    background-image: url("../img/border.jpg");
+    background-size: 10px 10px;
+    background-repeat: repeat;
+}
+
+/* Modal */
+.modal-image {
+    margin: auto;
+}
+
+/* Opening hours */
+.bold {
+    font-weight: bold;
+}
+
+.openinghour {
+    margin-bottom: 5px;
+}
+
+/* Map */
+
+.map {
+    height: 400px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .map {
+        height: 40%;
+    }
+    .parallax-window.food {
+        height: 200px !important;
+    }
+
+}
+
+.map iframe {
+    pointer-events: none;
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    color: #fff200 !important;
+}
+
+h2, h4 {
+    color: #ffc000 !important;
+}
+
+.lead, .footer, .quotes p {
+    font-family: calibri, Helvetica, Arial, sans-serif;
+}
+
+.quotes p {
+    font-style: italic;
+}
+
+/* Lang */
+.lang-select {
+    cursor: pointer;
+}
+
+.lang-select.active {
+    color: black;
+}
+
+.content-section {
+    padding-bottom: 0px !important;
+}
+
+.grey {
+    color: rgb(52,58,64);
+}
+
+/* Carousel */
+.carousel-img {
+    max-height: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.carousel-control-wrapper {
+    padding: 15px;
+    background: rgba(52,58,64,.5);
+}
+
+/* Parallax */
+.parallax-window {
+    background: transparent;
+}
+
+.parallax-window.main {
+    min-height: 100%;
+}
+
+.parallax-window.food {
+    height: 400px;
+}
+
+.parallax-window.footer {
+    height: 400px;
+}
+
+/* Sidebar */
+
+/* Side Menu */
+#sidebar-wrapper {
+    background-color: rgba(245,245,245, 0.9) !important;
+}
+
+.sidebar-nav-item a {
+    color: #6b6b6b !important;
+}
+
+.sidebar-nav-item a:hover {
+    text-decoration: none;
+    color: grey !important;
+    background: white !important;
+}
+
+.sidebar-nav-item a:active,
+.sidebar-nav-item a:focus {
+    text-decoration: none;
+}
+
+#sidebar-wrapper > ul > li.sidebar-brand > a {
+    color: #343a40 !important;
+}
+
+.sidebar-nav-item > .sidebar-brand a:hover {
+    color: black;
+    background: none;
+}
