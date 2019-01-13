@@ -15,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.4.0npm",
-    "firebase-tools": "latest",
+    "firebase-tools": "6.2.2",
     "uglify-js": "^3.4.9"
   }
 }
