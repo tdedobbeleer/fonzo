@@ -1,0 +1,19 @@
+language: node_js
+
+branches:
+  only:
+    - master # will only build for master branch commits
+
+before_script: # commands to run before the build step
+   - travis_retry npm install -dd -g firebase-tools # installs firebase to run firebase deploy
+
+script: # the build step
+  - npm install
+  - npm run minify
+after_success:
+  - npm run deploy-travis-test
+  - test $TRAVIS_BRANCH = "master" && npm run deploy-travis-test
+notifications:
+  email: # only receive email when the build status changes (someone broke the build!)
+    on_failure: change
+    on_success: change

@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "description": "Fonzo",
   "scripts": {
-    "lite": "minify src/js/ui.js && lite-server --port 8080 --baseDir=./src",
-    "minify": "minify src/js/ui.js",
+    "lite": "npm run minify && lite-server --port 8080 --baseDir=./src",
+    "minify": "uglifyjs --compress --mangle --output src/js/ui.min.js src/js/ui.js",
     "start": "npm run lite",
-    "deploy-test": "minify src/js/ui.js && firebase use fonzo-test && firebase deploy --only hosting && node firebase-cleanup.js fonzo-test 5 commit",
-    "deploy": "minify src/js/ui.js && firebase use fonzo-prod && firebase deploy --only hosting && node firebase-cleanup.js fonzo-prod 5 commit"
+    "local-deploy-test": "npm run minify && firebase use fonzo-test && firebase deploy --only hosting && node firebase-cleanup.js fonzo-test 5 commit",
+    "local-deploy": "npm run minify && firebase use fonzo-prod && firebase deploy --only hosting && node firebase-cleanup.js fonzo-prod 5 commit",
+    "travis-deploy-test": "firebase use fonzo-test --token $FIREBASE_TOKEN --non-interactive && firebase deploy --only hosting && node firebase-cleanup.js fonzo-test 5 commit",
+    "travis-deploy": "firebase use --token $FIREBASE_TOKEN --non-interactive fonzo-prod && firebase deploy --token $FIREBASE_TOKEN --non-interactive --only hosting && node firebase-cleanup.js fonzo-prod 5 commit"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.4.0npm",
     "firebase-tools": "latest",
-    "minifier": "latest"
+    "uglify-js": "^3.4.9"
   }
 }

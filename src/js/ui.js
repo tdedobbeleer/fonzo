@@ -1,5 +1,5 @@
 (function ($, aos) {
-    const LANG_EN = {
+    var LANG_EN = {
         'text.loading': 'Loading...',
         'text.home.where': 'Where are we located?',
         'nav.home': 'Home',
@@ -28,7 +28,7 @@
             {"text" : "Small, quirky, very friendly and just a fantastic vibe. The best place to grab a drink and a bite of tapas in Málaga.", "source" : "Patrick R. via Facebook", "url" : "https://www.facebook.com/patrick.redmond01/posts/10156556001002856"}
         ]
     };
-    const LANG_NL = {
+    var LANG_NL = {
         'text.loading': 'Laden...',
         'text.home.where': 'Waar vind je ons?',
         'nav.home': 'Home',
@@ -58,7 +58,7 @@
         ]
     };
 
-    const LANG_ES = {
+    var LANG_ES = {
         'text.loading': 'Loading...',
         'text.home.where': '¿Dónde estamos?',
         'text.home.description': 'Something Spanish',
@@ -89,7 +89,7 @@
         ]
     };
 
-    const PROPERTIES = {
+    var PROPERTIES = {
         'title': 'Fonzo, Comida Casera - Málaga',
         'address.street': 'Calle Mariblanca 4',
         'address.city': 'Málaga',
@@ -121,10 +121,10 @@
         'openinghours.sunday': []
     };
 
-    const DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-    const NL = 'nl';
-    const EN = 'en';
-    const ES = 'es';
+    var DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+    var NL = 'nl';
+    var EN = 'en';
+    var ES = 'es';
 
     //Init
     initializeSignature();
@@ -266,7 +266,7 @@
             return i === 0 ? 'active' : '';
         }
 
-        const n = '#food-carousel';
+        var n = '#food-carousel';
         var e = $(n);
         PROPERTIES['carousel-images'].forEach(function (img, i) {
             //e.find(".carousel-indicators").first().append('<li data-target="' + n + '" data-slide-to="' + i + '"></li>');
