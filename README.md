@@ -12,10 +12,10 @@ To run locally:
 
 To deploy to test:
 
-`npm run deploy-test`
+`npm run local-deploy-test`
 
 To deploy:
 
-`npm run deploy`
+`npm run local-deploy`
 
 All files in `/src` will be deployed as is.
