@@ -90,7 +90,7 @@
     };
 
     var PROPERTIES = {
-        'title': 'Fonzo, Comida Casera - Málaga',
+        'title': 'Fonzo, bar de tapas - Málaga',
         'address.street': 'Calle Mariblanca 4',
         'address.city': 'Málaga',
         'address.postal': '29012',
