@@ -143,9 +143,25 @@
     setLinks();
     initializeLang();
     initializeLangButtons();
+    initializeNavBarFix();
 
     //Init 3d party libs
     aos.init();
+
+    function initializeNavBarFix() {
+        var menu = $('.menu-toggle');
+        var sidebar = $('.sidebar-nav');
+        $(document).mouseup(function (e) {
+            if (!menu.is(e.target) // if the target of the click isn't the container...
+                && menu.has(e.target).length === 0
+                && !sidebar.is(e.target) // if the target of the click isn't the container...
+                && sidebar.has(e.target).length === 0
+                && menu.hasClass('active')) // ... nor a descendant of the container
+            {
+                menu.click();
+            }
+        });
+    }
 
     function initializeSignature() {
         console.log("" +
