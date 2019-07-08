@@ -124,7 +124,7 @@
         'openinghours.wednesday': [{'open': '19:00', 'closed': '00:00'}],
         'openinghours.thursday': [{'open': '19:00', 'closed': '00:00'}],
         'openinghours.friday': [{'open': '19:00', 'closed': '00:00'}],
-        'openinghours.saturday': [{'open': '13:30', 'closed': '16:30'}, {'open': '19:00', 'closed': '00:00'}],
+        'openinghours.saturday': [{'open': '19:00', 'closed': '00:00'}],
         'openinghours.sunday': []
     };
 
