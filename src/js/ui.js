@@ -287,9 +287,8 @@
     }
 
     function downloadIfRequested() {
-        var file = getUrlParameter('download');
-        switch (file) {
-            case "menu":
+        switch (window.location.pathname) {
+            case "/menu":
                 window.location.assign(PROPERTIES['download.menu']);
                 break;
             default:
