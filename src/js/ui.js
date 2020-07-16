@@ -101,6 +101,7 @@
         'instagram': 'https://www.instagram.com/fonzomalaga/',
         'map': 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.9215589477885!2d-4.42244498471226!3d36.724445079964326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7bf07bccf93%3A0x1275bcd023df0785!2sCalle+Mariblanca%2C+4%2C+29012+M%C3%A1laga%2C+Spanje!5e0!3m2!1snl!2sbe!4v1526496334857',
         'download.menu' : 'https://drive.google.com/uc?export=download&id=1y3PlOqcC83AiCaLxRFZ5Gb9rb1vY6D90',
+        'download.drinks' : 'https://drive.google.com/uc?export=download&id=1ALbj1C6laRS8jUGRJv61R2Qa5wny-8Wj',
         'carousel-images': [
             'img/carousel_1.jpg',
             'img/carousel_2.jpg',
@@ -121,12 +122,12 @@
             'img/carousel_18.jpg'
         ],
         'openinghours.monday': [],
-        'openinghours.tuesday': [{'open': '19:00', 'closed': '00:00'}],
-        'openinghours.wednesday': [{'open': '19:00', 'closed': '00:00'}],
-        'openinghours.thursday': [{'open': '19:00', 'closed': '00:00'}],
-        'openinghours.friday': [{'open': '19:00', 'closed': '00:00'}],
-        'openinghours.saturday': [{'open': '19:00', 'closed': '00:00'}],
-        'openinghours.sunday': []
+        'openinghours.tuesday': [],
+        'openinghours.wednesday': [{'open': '20:00', 'closed': '23:30'}],
+        'openinghours.thursday': [{'open': '14:00', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:30'}],
+        'openinghours.friday': [{'open': '14:00', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:30'}],
+        'openinghours.saturday': [{'open': '14:00', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:30'}],
+        'openinghours.sunday': [{'open': '14:00', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:30'}]
     };
 
     var DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
@@ -290,6 +291,9 @@
         switch (window.location.pathname) {
             case "/menu":
                 window.location.assign(PROPERTIES['download.menu']);
+                break;
+            case "/drinks":
+                window.location.assign(PROPERTIES['download.drinks']);
                 break;
             default:
             // Nothing
