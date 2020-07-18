@@ -258,6 +258,7 @@
     }
 
     function initializeLang() {
+        /**
         var currentLang = getUrlParameter('lang') || localStorage.getItem('lang') || navigator.language || EN;
         if (currentLang.startsWith(EN)) {
             currentLang = EN;
@@ -271,6 +272,8 @@
         }
 
         setLang(currentLang, true);
+         **/
+        setLang(EN, true)
     }
 
     function setLang(lang, init) {
