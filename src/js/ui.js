@@ -8,7 +8,8 @@
         'nav.reservations' : 'Reservations',
         'nav.contact': 'Contact',
         'title.reservations' : 'Book your table',
-        'text.reservations' : 'The easiest way to book your table is to contact us via <a href="https://wa.me/message/DHE4A3W3TPP2P1">Whatsapp <i class="fab fa-whatsapp"></i></a>.</br>Or you can go old school and just <a class="tel" rel="nofollow" href="tel:" data-property="tel">give us a call <i class="fas fa-phone"></i></a>.',
+        'text.reservations.phone' : 'Or you can go old school and just <a data-property-href="tel" class="tel" rel="nofollow" href="tel:" data-property="tel">give us a call</a>.',
+        'text.reservations.whatsapp' : 'You can either contact us via <a data-property-href="whatsapp" rel="nofollow" href="">Whatsapp</i></a>.',
         'title.food': 'Food and drinks',
         'text.food': 'In our bar you can enjoy our delicious and original home-made dishes. We try to work exclusively with fresh products. We also have a nice selection of wines, vermouths, artisanal beers, gins and liqueurs. Feel free to drop by for a drink or a bite to eat!<br/> <br/> Our drinks menu can already be downloaded <a href="/drinks" target="_blank"> here</a>.',
         'title.about': "About us",
@@ -99,6 +100,7 @@
         'address.postal': '29012',
         'address.country': 'Spain',
         'tel': '+34 653 20 35 86',
+        'whatsapp' : 'https://wa.me/message/DHE4A3W3TPP2P1',
         'email': 'fonzomalaga@gmail.com',
         'facebook': 'https://www.facebook.com/fonzomalaga/',
         'instagram': 'https://www.instagram.com/fonzomalaga/',
@@ -212,7 +214,7 @@
 
     function setLinks() {
         $("[data-property-href]").each(function () {
-            $(this).attr("href", PROPERTIES[$(this).data('property-href')]);
+            $(this).attr("href", $(this).attr("href") + PROPERTIES[$(this).data('property-href')]);
         });
     }
 
