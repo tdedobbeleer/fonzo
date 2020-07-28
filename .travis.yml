@@ -1,8 +1,5 @@
 language: node_js
 
-branches:
-  only:
-    - master # will only build for master branch commits
 node_js:
   - node # will use latest node
 

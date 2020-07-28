@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Fonzo, bar de tapas - Málaga</title>
@@ -20,10 +20,12 @@
     <link href="css/aos.css" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Custom Fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link href="theme/css/stylish-portfolio.min.css" rel="stylesheet">
@@ -32,6 +34,13 @@
 
 </head>
 <body id="page-top">
+
+<!-- Social nav -->
+<span class="menu-social rounded" href="#">
+    <a href="" data-property-href="facebook"
+       target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>&nbsp;
+    <a href="" data-property-href="instagram" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+</span>
 
 <!-- Navigation -->
 <a class="menu-toggle rounded" href="#">
@@ -52,9 +61,12 @@
             <a class="js-scroll-trigger" data-translate="nav.food" href="#food"></a>
         </li>
         <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" data-translate="nav.reservations" href="#reservations"></a>
+        </li>
+        <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" data-translate="nav.contact" href="#contact"></a>
         </li>
-        <li class="sidebar-nav-item no-link">
+        <li class="sidebar-nav-item no-link d-none">
             <a>
                 <span class="fa fa-globe" style="display: inline"></span>&nbsp;
                 <span class="lang-select" data-lang="es">ES</span>&nbsp;|&nbsp;
@@ -154,6 +166,45 @@
             allowfullscreen src=""></iframe>
 </section>
 
+<!--
+<div class="checkered"></div>
+
+<section class="content-section" id="reservations">
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-12 text-center " data-aos="fade-down">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-12"><img src="img/star.png"/></div>
+                    <div class="col-sm-6 col-xs-12">
+                        <h2 data-translate="title.reservations"></h2>
+                    </div>
+                    <div class="col-sm-3 d-none d-sm-block"><img src="img/star.png"/></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-5 mb-lg-0 text-center">
+                <p class="lead">
+                    <i data-translate="text.reservations.whatsapp"></i>
+                </p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2>OR</h2>
+                <p class="lead" data-translate="text.reservations.form"></p>
+            </div>
+
+        </div>
+        <div class="row">
+            <iframe src="formsurl" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+
+
+</section>
+-->
+
 <div class="checkered"></div>
 
 <!-- Footer -->
@@ -172,11 +223,11 @@
                     </p>
                 </div>
                 <ul class="list-unstyled" data-aos="flip-right">
-                    <li><i class="fas fa-phone grey"></i></i>&nbsp;<a class="email" rel="nofollow" href="tel:"
-                                                                  data-property="tel"></a>
+                    <li><i class="fas fa-phone grey"></i>&nbsp;<a class="tel" rel="nofollow" href="tel:"
+                                                                  data-property-href="tel" data-property="tel"></a>
                     </li>
-                    <li><i class="fas fa-envelope grey"></i></i> <a class="tel" rel="nofollow" href="'mailto:"
-                                                                  data-property="email"></a>
+                    <li><i class="fas fa-envelope grey"></i> <a class="email" rel="nofollow" href="mailto:"
+                                                                data-property-href="email" data-property="email"></a>
                     </li>
                 </ul>
                 <br>
@@ -189,7 +240,8 @@
                     </div>
                     <div class="col text-left">
                         <span data-aos="fade-left">
-                            <a href="#" data-property-href="instagram" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="#" data-property-href="instagram" target="_blank"><i
+                                    class="fab fa-instagram fa-3x"></i></a>
                         </span>
                     </div>
                 </div>
@@ -243,7 +295,7 @@
                                 <div class="col text-left" data-openinghours="sunday">
                                 </div>
                             </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -251,6 +303,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </footer>
 
 <!-- Scroll to Top Button-->
@@ -259,11 +312,15 @@
 </a>
 
 <!-- Bootstrap core JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"
+        integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl"
+        crossorigin="anonymous"></script>
 
 <!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+        integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
 
 <!-- Custom scripts for this template -->
 <script src="theme/js/stylish-portfolio.min.js"></script>

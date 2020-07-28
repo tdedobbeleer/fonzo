@@ -5,9 +5,13 @@
         'nav.home': 'Home',
         'nav.food': 'Food and drinks',
         'nav.about': 'About us',
+        'nav.reservations' : 'Reservations',
         'nav.contact': 'Contact',
+        'title.reservations' : 'Book your table',
+        'text.reservations.form' : 'Or fill out this very convenient form:',
+        'text.reservations.whatsapp' : 'You can either contact us via <a data-property-href="whatsapp" target="_blank" rel="nofollow" href="">Whatsapp <i class="fab fa-whatsapp"></i></a>.',
         'title.food': 'Food and drinks',
-        'text.food': 'In our bar you can enjoy our delicious and original home-made dishes. We try to work exclusively with fresh products. We also have a nice selection of wines, vermouths, artisanal beers, gins and liqueurs. Feel free to drop by for a drink or a bite to eat!<br/> <br/> Our drinks menu can already be downloaded <a href="/files/menu_fonzo.pdf" download> here</a>.',
+        'text.food': 'In our bar you can enjoy our delicious and original home-made dishes. We try to work exclusively with fresh products. We also have a nice selection of wines, vermouths, artisanal beers, gins and liqueurs. Feel free to drop by for a drink or a bite to eat!<br/> <br/> Our drinks menu can already be downloaded <a href="/drinks" target="_blank"> here</a>.',
         'title.about': "About us",
         'text.about': 'Welcome to our website! We are Julie Impens and Pieter De Dobbeleer, owners of Fonzo. For years we have been passionate about delicious and healthy food we want everyone to enjoy at an affordable price. <br/> <br/> Fonzo is a colorful, quirky, surprising space full of trinkets where there is always something to discover. The name of the bar is an ode to our father(-in-law) Fons De Dobbeleer, who died too young. He still watches over the bar with his photo at the entrance.',
         'text.monday': "Monday",
@@ -36,7 +40,7 @@
         'nav.about': 'Over ons',
         'nav.contact': 'Contacteer ons',
         'title.food': 'Eten en drinken',
-        'text.food': 'In onze bar kunnen jullie genieten van onze heerlijke en originele huisgemaakte gerechten. We proberen uitsluitend te werken met verse producten. Daarnaast hebben we ook een mooie selectie aan wijnen, vermouts, artisanale bieren, gins en likeuren. Kom gerust eens langs voor een hapje en een drankje en vraag naar de Nederlandstalige menukaart!\n<br/><br/>Onze drankkaart kan je alvast <a href="/files/menu_fonzo.pdf" download>hier downloaden</a>.',
+        'text.food': 'In onze bar kunnen jullie genieten van onze heerlijke en originele huisgemaakte gerechten. We proberen uitsluitend te werken met verse producten. Daarnaast hebben we ook een mooie selectie aan wijnen, vermouts, artisanale bieren, gins en likeuren. Kom gerust eens langs voor een hapje en een drankje en vraag naar de Nederlandstalige menukaart!\n<br/><br/>Onze drankkaart kan je alvast <a href="/drinks" target="_blank">hier downloaden</a>.',
         'title.about': "Over ons",
         'text.about': 'Hartelijk welkom op onze website! Wij zijn Julie Impens en Pieter De Dobbeleer, uitbaters van Fonzo. Al jaren zijn we gepassioneerd door lekker en gezond eten en we willen dat iedereen kan genieten aan een betaalbare prijs.<br/><br/>Fonzo is een kleurrijke, eigenzinnige, verrassende ruimte vol snuisterijen waar er telkens iets te ontdekken valt. De naam van de bar is een ode aan onze te jong gestorven (schoon)vader Fons De Dobbeleer - Hij waakt nog steeds over de bar met zijn foto aan de ingang.',
         'text.monday': "Maandag",
@@ -67,7 +71,7 @@
         'nav.about': 'Sobre nosotros',
         'nav.contact': 'Contacto',
         'title.food': 'Bebidas y tapas',
-        'text.food': 'En nuestro bar podrá disfrutar de nuestros deliciosos y originales platos caseros. Intentamos trabajar exclusivamente con productos frescos. También tenemos una buena selección de vinos, vermuts, cervezas artesanales, ginebras y licores. No dude en venir a tomar un aperitivo y una bebida<br /> <br/> Nuestra tarjeta de bebida ya se puede descargar <a href="/files/menu_fonzo.pdf" download> aquí</a>.',
+        'text.food': 'En nuestro bar podrá disfrutar de nuestros deliciosos y originales platos caseros. Intentamos trabajar exclusivamente con productos frescos. También tenemos una buena selección de vinos, vermuts, cervezas artesanales, ginebras y licores. No dude en venir a tomar un aperitivo y una bebida<br /> <br/> Nuestra tarjeta de bebida ya se puede descargar <a href="/drinks" target="_blank"> aquí</a>.',
         'title.about': "Sobre nosotros",
         'text.about': '¡Bienvenido a nuestro sitio web! Somos Julie Impens y Pieter De Dobbeleer, dueños de Fonzo. Durante años hemos sido apasionados por la comida deliciosa y saludable y queremos que todos disfruten de un precio asequible. <br/> <br/> Fonzo es un espacio colorido, extravagante, sorprendente lleno de baratijas donde siempre hay algo por descubrir. El nombre del bar es una oda a nuestro padre/suegro Fons De Dobbeleer, que murió demasiado joven. Todavía vigila la barra con su foto en la entrada.',
         'text.monday': "Lunes",
@@ -96,12 +100,13 @@
         'address.postal': '29012',
         'address.country': 'Spain',
         'tel': '+34 653 20 35 86',
+        'whatsapp' : 'https://wa.me/message/DHE4A3W3TPP2P1',
         'email': 'fonzomalaga@gmail.com',
         'facebook': 'https://www.facebook.com/fonzomalaga/',
         'instagram': 'https://www.instagram.com/fonzomalaga/',
         'map': 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.9215589477885!2d-4.42244498471226!3d36.724445079964326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7bf07bccf93%3A0x1275bcd023df0785!2sCalle+Mariblanca%2C+4%2C+29012+M%C3%A1laga%2C+Spanje!5e0!3m2!1snl!2sbe!4v1526496334857',
-        'download.menu' : 'https://drive.google.com/uc?export=download&id=1y3PlOqcC83AiCaLxRFZ5Gb9rb1vY6D90',
-        'download.drinks' : 'https://drive.google.com/uc?export=download&id=1ALbj1C6laRS8jUGRJv61R2Qa5wny-8Wj',
+        'download.menu' : 'https://drive.google.com/uc?export=download&id=1h28t7puZXC_GGqLxxShwq8a1fCrQ6dBF',
+        'download.drinks' : 'https://drive.google.com/uc?export=download&id=1GgADTtPWS2h-YSEpk7K2hMma5fY5yaec',
         'carousel-images': [
             'img/carousel_1.jpg',
             'img/carousel_2.jpg',
@@ -141,12 +146,14 @@
     setOpeningHours();
     setContactDetails();
     setMap();
-    setPoperties();
     setCarousel();
-    setLinks();
     initializeLang();
     initializeLangButtons();
     initializeNavBarFix();
+
+    //always init lastly
+    setLinks();
+    setPoperties();
 
     //Init 3d party libs
     aos.init();
@@ -209,7 +216,7 @@
 
     function setLinks() {
         $("[data-property-href]").each(function () {
-            $(this).attr("href", PROPERTIES[$(this).data('property-href')]);
+            $(this).attr("href", $(this).attr("href") + PROPERTIES[$(this).data('property-href')]);
         });
     }
 
@@ -258,6 +265,7 @@
     }
 
     function initializeLang() {
+        /**
         var currentLang = getUrlParameter('lang') || localStorage.getItem('lang') || navigator.language || EN;
         if (currentLang.startsWith(EN)) {
             currentLang = EN;
@@ -271,6 +279,8 @@
         }
 
         setLang(currentLang, true);
+         **/
+        setLang(EN, true)
     }
 
     function setLang(lang, init) {
