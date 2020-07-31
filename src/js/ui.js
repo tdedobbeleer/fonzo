@@ -129,10 +129,10 @@
         'openinghours.monday': [],
         'openinghours.tuesday': [],
         'openinghours.wednesday': [{'open': '20:00', 'closed': '23:30'}],
-        'openinghours.thursday': [{'open': '14:00', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:30'}],
-        'openinghours.friday': [{'open': '14:00', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:30'}],
-        'openinghours.saturday': [{'open': '14:00', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:30'}],
-        'openinghours.sunday': [{'open': '14:00', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:30'}]
+        'openinghours.thursday': [{'open': '20:00', 'closed': '23:30'}],
+        'openinghours.friday': [{'open': '20:00', 'closed': '23:30'}],
+        'openinghours.saturday': [{'open': '20:00', 'closed': '23:30'}],
+        'openinghours.sunday': [{'open': '20:00', 'closed': '23:30'}]
     };
 
     var DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
