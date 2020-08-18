@@ -94,7 +94,7 @@
     };
 
     var PROPERTIES = {
-        'title': 'Fonzo, bar de tapas - Málaga',
+        'title': 'Fonzo, craft kitchen - Málaga',
         'address.street': 'Calle Mariblanca 4',
         'address.city': 'Málaga',
         'address.postal': '29012',
