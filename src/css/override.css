@@ -1,6 +1,8 @@
 #hero {
-    /* background: url("../img/Foto fb.jpg") top center no-repeat; !important;
-    background-size: cover; !important; */
+    background: url("../img/bg.jpg") center center no-repeat;
+!important;
+    background-size: cover;
+!important;
 }
 
 .map {
@@ -8,6 +10,30 @@
 }
 
 #header .logo img {
-    max-height: 65px;
+    max-height: 70px;
 !important;
+}
+
+@media (max-width: 991px) {
+
+    .modal {
+        padding: 0 !important;
+    }
+
+    .modal .modal-dialog {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        margin: 0;
+    }
+
+    .modal .modal-content {
+        height: 100%;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .modal .modal-body {
+        overflow-y: auto;
+    }
 }

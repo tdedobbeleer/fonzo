@@ -34,6 +34,7 @@
     <link href="css/override.css" rel="stylesheet">
 
 </head>
+
 <body id="page-top">
 
 <!-- ======= Header ======= -->
@@ -50,7 +51,8 @@
                 </ul>
             </nav><!-- .nav-menu -->
 
-            <a class="get-started-btn js-scroll-trigger" data-translate="nav.book.now" href="#book"></a>
+            <a class="get-started-btn js-scroll-trigger" data-target="#bookModal" data-toggle="modal"
+               data-translate="nav.book.now" href="#book"></a>
 
     </div>
 </header><!-- End Header -->
@@ -66,13 +68,37 @@
 <a class="back-to-top" href="#"><i class="bx bx-up-arrow-alt"></i></a>
 
 <main id="main">
+    <!-- Modal -->
+    <div aria-hidden="true" aria-labelledby="bookModalLabel" class="modal fade" id="bookModal" role="dialog"
+         tabindex="-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>To book, please</p>
+                    <p>message us via <a data-property-href="whatsapp" href="" rel="nofollow" target="_blank">Whatsapp
+                        <i class="icofont-whatsapp"></i></a></p>
+                    <p>or just</p>
+                    <p><a class="tel" data-property-href="tel" href="tel:" rel="nofollow"><i class="icofont-phone"></i>&nbsp;call
+                        us the old fashioned way</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ======= About Section ======= -->
     <section class="about" id="philosophy">
-        <div class="container aos-init aos-animate" data-aos="fade-right">
+        <div class="container">
 
             <div class="section-title">
-                <h2>Philosophy</h2>
+                <h2>What do we stand for?</h2>
                 <p>Philosophy</p>
             </div>
 
@@ -89,31 +115,31 @@
 
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                     <ul>
-                        <li>
+                        <li data-aos="fade-right">
                             <i class="icofont-leaf">&nbsp;Fresh food</i>
                             <p class="font-italic">Our kitchen is built around fresh vegetables, fresh herbs and
                                 tasteful spices. We only make what we love to eat ourselves, straightforward & honest
                                 food.</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-left">
                             <i class="icofont-people">&nbsp;Food to share</i>
                             <p class="font-italic">So you can savour a little bit of everything and above all, share the
                                 tasting experience in the company of your friends or family.</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-right">
                             <i class="icofont-culinary">&nbsp;Authentic creations</i>
                             <p class="font-italic">Our dishes are all made in-house with love, always searching for ways
                                 to replace industrial produced ingredients and prepare them ourselves, because real food
                                 tastes better. We enjoy making original and creative dishes that you cannot find
                                 elsewhere.</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-left">
                             <i class="icofont-avocado">&nbsp;Local ingredients</i>
                             <p class="font-italic">We love local, seasonal and organic ingredients, that is why our menu
                                 varies depending on the seasons and arrivals. To support small business like ourselves,
                                 we mainly work with local suppliers.</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-right">
                             <i class="icofont-soft-drinks">&nbsp;Quality drinks</i>
                             <p class="font-italic">Everything we serve has been approved by our taste buds! You will
                                 discover a wide range of quality wines, vermuts, original gins, craft beers, homemade
@@ -123,7 +149,7 @@
 
                 </div>
 
-                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
                     <img alt="" class="img-fluid img-thumbnail" src="img/about.jpg">
                 </div>
 
