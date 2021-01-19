@@ -1,4 +1,4 @@
-(function ($, aos) {
+(function ($) {
     var LANG_EN = {
         'nav.philosophy': 'Philosophy',
         'nav.book.now': 'Book now',
@@ -39,25 +39,6 @@
         'download.menu' : 'https://drive.google.com/uc?export=download&id=19jJ2Av6VDkMbHgufm-HkYZHIe08WC6va',
         'download.drinks' : 'https://drive.google.com/uc?export=download&id=1GgADTtPWS2h-YSEpk7K2hMma5fY5yaec',
         'download.vinos' : 'https://drive.google.com/uc?export=download&id=1Is6l3-UbnuUbXAJHhH6thH8_9wB2eQyL',
-        'carousel-images': [
-            'img/about.jpg',
-            'img/carousel_2.jpg',
-            'img/carousel_3.jpg',
-            'img/carousel_5.jpg',
-            'img/carousel_6.jpg',
-            'img/carousel_7.jpg',
-            'img/carousel_8.jpg',
-            'img/carousel_9.jpg',
-            'img/carousel_10.jpg',
-            'img/carousel_11.jpg',
-            'img/carousel_12.jpg',
-            'img/carousel_13.jpg',
-            'img/carousel_14.jpg',
-            'img/carousel_15.jpg',
-            'img/carousel_16.jpg',
-            'img/carousel_17.jpg',
-            'img/carousel_18.jpg'
-        ],
         'openinghours.monday': [],
         'openinghours.tuesday': [],
         'openinghours.wednesday': [{'open': '20:00', 'closed': '23:30'}],
@@ -78,32 +59,12 @@
     setOpeningHours();
     setContactDetails();
     setMap();
-    setCarousel();
     initializeLang();
-    initializeLangButtons();
-    initializeNavBarFix();
+    //initializeLangButtons();
 
     //always init lastly
     setLinks();
     setPoperties();
-
-    //Init 3d party libs
-    aos.init();
-
-    function initializeNavBarFix() {
-        var menu = $('.menu-toggle');
-        var sidebar = $('.sidebar-nav');
-        $(document).mouseup(function (e) {
-            if (!menu.is(e.target) // if the target of the click isn't the container...
-                && menu.has(e.target).length === 0
-                && !sidebar.is(e.target) // if the target of the click isn't the container...
-                && sidebar.has(e.target).length === 0
-                && menu.hasClass('active')) // ... nor a descendant of the container
-            {
-                menu.click();
-            }
-        });
-    }
 
     function initializeSignature() {
         console.log("" +
@@ -254,24 +215,6 @@
         return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
     }
 
-    function setCarousel() {
-        function setActive(i) {
-            return i === 0 ? 'active' : '';
-        }
-
-        var n = '#food-carousel';
-        var e = $(n);
-        PROPERTIES['carousel-images'].forEach(function (img, i) {
-            //e.find(".carousel-indicators").first().append('<li data-target="' + n + '" data-slide-to="' + i + '"></li>');
-            e.find(".carousel-inner").first().append('<div class="carousel-item ' + setActive(i) + '"><img class="carousel-img" src="' + img + '"></div>')
-        });
-
-        e.find('.item').first().addClass('active');
-        e.find('.carousel-indicators > li').first().addClass('active');
-
-        //e.carousel();
-    }
-
     function setQuotes() {
         var a = getLocalizedMessage("text.quotes") || [];
         if (a.length > 0) {
@@ -310,4 +253,4 @@
         })
     }
 
-})(jQuery, AOS);
+})(jQuery);
