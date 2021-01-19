@@ -1,0 +1,13 @@
+#hero {
+    /* background: url("../img/Foto fb.jpg") top center no-repeat; !important;
+    background-size: cover; !important; */
+}
+
+.map {
+    height: 30rem;
+}
+
+#header .logo img {
+    max-height: 65px;
+!important;
+}
