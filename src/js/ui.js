@@ -25,13 +25,13 @@
     };
 
     var PROPERTIES = {
-        'title': 'Fonzo, craft kitchen - Málaga',
+        'title': 'Fonzo, cosy eatery - Málaga',
         'address.street': 'Calle Mariblanca 4',
         'address.city': 'Málaga',
         'address.postal': '29012',
         'address.country': 'Spain',
         'tel': '+34 653 20 35 86',
-        'whatsapp' : 'https://wa.me/message/DHE4A3W3TPP2P1',
+        'whatsapp': 'https://wa.me/message/DHE4A3W3TPP2P1',
         'email': 'fonzomalaga@gmail.com',
         'facebook': 'https://www.facebook.com/fonzomalaga/',
         'instagram': 'https://www.instagram.com/fonzomalaga/',
