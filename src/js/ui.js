@@ -229,7 +229,7 @@
             }
 
             $.each(quotes, function (i, obj) {
-                var c = (i % 2) === 0 ? "col-md-6 offset-md-8" : "col-md-4 offset-md-3";
+                var c = (i % 2) === 0 ? "col-md-4 offset-md-7" : "col-md-4 offset-md-3";
 
                 var quote = $("<div/>", {"class": "row"}).append($("<div/>", {
                     "class": c,

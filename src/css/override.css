@@ -1,8 +1,39 @@
 #hero {
-    background: url("../img/bg.jpg") center center no-repeat;
+    background: url("../img/bg.jpg") top center no-repeat;
 !important;
     background-size: cover;
 !important;
+}
+
+.about .content ul i {
+    font-size: 26px;
+    color: #55a086;
+}
+
+.get-started-btn {
+    background: #55a086;
+}
+
+.get-started-btn:hover {
+    background: #6bd0b2;
+}
+
+a {
+    color: #55a086;
+}
+
+hr {
+    color: #c0922d;
+    background-color: #c0922d;
+}
+
+.section-title h2::after {
+    background: #c0922d;
+    width: 100px;
+}
+
+a:hover {
+    color: #6bd0b2;
 }
 
 .map {
@@ -10,11 +41,25 @@
 }
 
 #header .logo img {
-    max-height: 70px;
+    max-height: 110px;
 !important;
 }
 
+#hero h1 {
+    font-size: 92px;
+!important font-style: bold;
+}
+
+#hero h2 {
+    font-size: 30px;
+!important font-style: bold;
+}
+
 @media (max-width: 991px) {
+    #header .logo img {
+        max-height: 90px;
+    !important;
+    }
 
     .modal {
         padding: 0 !important;
