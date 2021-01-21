@@ -6,260 +6,232 @@
     <base href="/">
 
     <meta charset="utf-8">
-    <meta name="theme-color" content="#ffc000">
+    <meta content="#5fcf8" name="theme-color">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="Fonzo is a colorful, quirky, surprising space full of trinkets where there is always something to discover.">
 
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"/>
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="site.webmanifest" rel="manifest">
+    <meta content="#da532c" name="msapplication-TileColor">
+    <meta content="#ffffff" name="theme-color">
 
-    <!-- Custom theme CSS -->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/aos.css" rel="stylesheet" type="text/css">
+    <!-- Vendor CSS Files -->
+    <link href="theme/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="theme/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="theme/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="theme/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="theme/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="theme/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="theme/assets/vendor/aos/aos.css" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Template Main CSS File -->
+    <link href="theme/assets/css/style.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
-    <link href="theme/css/stylish-portfolio.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-          rel="stylesheet" type="text/css">
+    <link href="css/override.css" rel="stylesheet">
 
 </head>
+
 <body id="page-top">
 
-<!-- Social nav -->
-<span class="menu-social rounded" href="#">
-    <a href="" data-property-href="facebook"
-       target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>&nbsp;
-    <a href="" data-property-href="instagram" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-</span>
+<!-- ======= Header ======= -->
+<div class="fixed-top" id="header">
+    <div class="container d-flex align-items-center">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a class="logo mr-auto" href="#page-top"><img alt="" class="img-fluid" src="img/logo.png">
 
-<!-- Navigation -->
-<a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-</a>
-<nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-            <a class="js-scroll-trigger" href="#page-top">Fonzo</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" data-translate="nav.home" href="#page-top"></a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" data-translate="nav.about" href="#about"></a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" data-translate="nav.food" href="#food"></a>
-        </li>
-        <!--
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" data-translate="nav.reservations" href="#reservations"></a>
-        </li>
-        -->
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" data-translate="nav.contact" href="#contact"></a>
-        </li>
-        <li class="sidebar-nav-item no-link d-none">
-            <a>
-                <span class="fa fa-globe" style="display: inline"></span>&nbsp;
-                <span class="lang-select" data-lang="es">ES</span>&nbsp;|&nbsp;
-                <span class="lang-select" data-lang="en">EN</span>&nbsp;|&nbsp;
-                <span class="lang-select" data-lang="nl">NL</span>
-            </a>
-        </li>
-    </ul>
-</nav>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li><a class="js-scroll-trigger" data-translate="nav.menu" href="/menu"></a></li>
+                    <li><a class="js-scroll-trigger" data-translate="nav.philosophy" href="#philosophy"></a></li>
+                    <li><a class="js-scroll-trigger" data-translate="nav.contact" href="#contact"></a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
 
-<!-- Header -->
-<div class="parallax-window main" data-parallax="scroll" data-image-src="/img/fonzo_header.jpg"></div>
+            <!--
+        <a class="get-started-btn js-scroll-trigger" data-target="#bookModal" data-toggle="modal"
+           data-translate="nav.book.now" href="#book"></a>
+            -->
 
-<div class="checkered" id="about"></div>
-<!-- About -->
-<section class="content-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center " data-aos="fade-down">
-                <div class="row">
-                    <div class="col-sm-3 col-xs-12"><img src="/img/star.png"/></div>
-                    <div class="col-sm-6 col-xs-12">
-                        <h2 data-translate="title.about"></h2>
-                    </div>
-                    <div class="col-sm-3 d-none d-sm-block"><img src="/img/star.png"/></div>
+    </div>
+</div><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section class="d-flex justify-content-center align-items-center" id="hero">
+    <div class="container position-relative text-center" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Fonzo</h1>
+        <h2>Flavour above everything</h2>
+    </div>
+</section><!-- End Hero -->
+
+<a class="back-to-top" href="#"><i class="bx bx-up-arrow-alt"></i></a>
+
+<main id="main">
+    <!-- Modal -->
+    <div aria-hidden="true" aria-labelledby="bookModalLabel" class="modal fade" id="bookModal" role="dialog"
+         tabindex="-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>To book, please</p>
+                    <p>message us via <a data-property-href="whatsapp" href="" rel="nofollow" target="_blank">Whatsapp
+                        <i class="icofont-whatsapp"></i></a></p>
+                    <p>or just</p>
+                    <p><a class="tel" data-property-href="tel" href="tel:" rel="nofollow"><i class="icofont-phone"></i>&nbsp;call
+                        us the old fashioned way</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
                 </div>
             </div>
-        </div>
-        <div class="row" data-aos="fade-up">
-            <div class="col-lg-12 text-center">
-                <hr class="small">
-                <div class="lead" data-translate="text.about"></div>
-            </div>
-        </div>
-        <!-- /.row -->
-        <div id="quotes" class="quotes">
-
         </div>
     </div>
-</section>
 
-<div class="parallax-window food" data-parallax="scroll" data-image-src="/img/fonzo_wp.jpg"></div>
-<div class="checkered" id="food"></div>
-<!-- Services -->
-<section class="content-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="row" data-aos="fade-down">
-                    <div class="col-sm-3 col-xs-12"><img src="/img/beer.png"/></div>
-                    <div class="col-sm-6 col-xs-12">
-                        <h2 data-translate="title.food"></h2>
-                    </div>
-                    <div class="col-sm-3 d-none d-sm-block"><img src="/img/wine.png"/></div>
+    <!-- ======= About Section ======= -->
+    <section class="about" id="philosophy">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Our Philosophy</h2>
+                <p>What do we stand for?</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 pt-4 pt-lg-0 content">
+                    <p>Fonzo, a cosy eatery by us, Piet & Julie, soulmates with a shared passion for food & wine. Fonzo
+                        is our personal project so we are constantly innovating, always searching for perfection. Every
+                        day we give the best of ourselves to deliver you a lovely experience.</p>
+                    <p>In our restaurant we stay true to:</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <ul>
+                        <li data-aos="fade-right">
+                            <span class="bullet">Fresh food&nbsp;<i class="icofont-leaf"></i></span>
+                            <p>Our kitchen is built around fresh vegetables, fresh herbs and
+                                tasteful spices. We only make what we love to eat ourselves, straightforward & honest
+                                food.</p>
+                        </li>
+                        <li data-aos="fade-left">
+                            <span class="bullet">Food to share&nbsp;<i class="icofont-people"></i></span>
+                            <p>So you can savour a little bit of everything and above all, share the
+                                tasting experience in the company of your friends or family.</p>
+                        </li>
+                        <li data-aos="fade-right">
+                            <span class="bullet">Authentic creations&nbsp;<i class="icofont-culinary"></i></span>
+                            <p>Our dishes are all made in-house with love, always searching for ways
+                                to replace industrial produced ingredients and prepare them ourselves, because real food
+                                tastes better. We enjoy making original and creative dishes that you cannot find
+                                elsewhere.</p>
+                        </li>
+                        <li data-aos="fade-left">
+                            <span class="bullet">Local ingredients&nbsp;<i class="icofont-avocado"></i></span>
+                            <p>We love local, seasonal and organic ingredients, that is why our menu
+                                varies depending on the seasons and arrivals. To support small business like ourselves,
+                                we mainly work with local suppliers.</p>
+                        </li>
+                        <li data-aos="fade-right">
+                            <span class="bullet">Quality drinks&nbsp;<i class="icofont-soft-drinks"></i></span>
+                            <p>Everything we serve has been approved by our taste buds! You will
+                                discover a wide range of quality wines, vermuts, original gins, craft beers, homemade
+                                lemonade or iced tea, and much more…</p>
+                        </li>
+                    </ul>
+
                 </div>
 
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-12">
-                        <hr class="small">
-                        <div class="lead" data-translate="text.food"></div>
+                <div class="col-lg-6 justify-content-center align-self-center" data-aos="fade-left"
+                     data-aos-delay="100">
+                    <img alt="" class="img-fluid img-thumbnail" src="img/about.jpg">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 pt-4 pt-lg-0 content text-center font-italic">
+                    <p>Fonzo is a place where you can feel at home, where you don’t have to pretend. It’s a no-nonsense
+                        and cosy place where you are served in a laid-back and friendly manner.</p>
+                    <p>Be welcome, take a seat and feel at home.</p>
+                    <p>Piet & Julie</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <hr class="col-md-12">
+                <div class="col-lg-12 pt-4 pt-lg-0 content quotes" id="quotes">
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="contact" id="contact">
+        <!-- Map -->
+        <section class="content-section map" id="map">
+            <iframe allowfullscreen frameborder="0" height="100%" marginheight="0" marginwidth="0" scrolling="no" src=""
+                    style="border:0" width="100%"></iframe>
+        </section>
+        <!-- Footer -->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div data-aos="flip-down">
+                            <h4><strong data-property="title"></strong>
+                            </h4>
+                            <p>
+                                <span data-property="address.street"></span>
+                                <br/><span data-property="address.postal"></span>&nbsp;<span
+                                    data-property="address.city"></span>,&nbsp;<span
+                                    data-property="address.country"></span>
+                            </p>
+                        </div>
+                        <ul class="list-unstyled" data-aos="flip-right">
+                            <li><i class="icofont-phone icofont-1x"></i>&nbsp;<a class="tel" data-property="tel"
+                                                                                 data-property-href="tel"
+                                                                                 href="tel:" rel="nofollow"></a>
+                            </li>
+                            <li><i class="icofont-email icofont-1x"></i>&nbsp;<a class="email" data-property="email"
+                                                                                 data-property-href="email"
+                                                                                 href="mailto:" rel="nofollow"></a>
+                            </li>
+                        </ul>
                         <br>
-                    </div>
-                </div>
-
-                <div class="row" data-aos="flip-left">
-                    <div class="col-lg-8 offset-lg-2 text-center">
-                        <div id="food-carousel" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-
+                        <div class="row">
+                            <div class="col text-right">
+                    <span data-aos="fade-right">
+                        <a data-property-href="facebook" href="#"
+                           target="_blank"><i class="icofont-facebook icofont-3x"></i></i></a>
+                    </span>
                             </div>
-                            <a class="carousel-control-prev" href="#food-carousel" role="button" data-slide="prev">
-                                <span class="carousel-control-wrapper rounded">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </span>
-
-                            </a>
-                            <a class="carousel-control-next" href="#food-carousel" role="button" data-slide="next">
-                                <span class="carousel-control-wrapper rounded">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </span>
-                            </a>
+                            <div class="col text-left">
+                    <span data-aos="fade-left">
+                        <a data-property-href="instagram" href="#" target="_blank"><i
+                                class="icofont-instagram icofont-3x"></i></i></a>
+                    </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- /.col-lg-10 -->
-        </div>
-        <!-- /.row -->
-    </div>
-</section>
-
-<!-- Map -->
-<section class="content-section map" id="contact">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border:0"
-            allowfullscreen src=""></iframe>
-</section>
-
-<!--
-<div class="checkered"></div>
-
-<section class="content-section" id="reservations">
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-md-12 text-center " data-aos="fade-down">
                 <div class="row">
-                    <div class="col-sm-3 col-xs-12"><img src="/img/star.png"/></div>
-                    <div class="col-sm-6 col-xs-12">
-                        <h2 data-translate="title.reservations"></h2>
-                    </div>
-                    <div class="col-sm-3 d-none d-sm-block"><img src="/img/star.png"/></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 mb-5 mb-lg-0 text-center">
-                <p class="lead">
-                    <i data-translate="text.reservations.whatsapp"></i>
-                </p>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-12">
-                <h2>OR</h2>
-                <p class="lead" data-translate="text.reservations.form"></p>
-            </div>
-
-        </div>
-        <div class="row">
-            <iframe src="formsurl" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-    </div>
-
-
-</section>
--->
-
-<div class="checkered"></div>
-
-<!-- Footer -->
-<footer class="footer text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1 text-center">
-                <div data-aos="flip-down">
-                    <h4><strong data-property="title"></strong>
-                    </h4>
-                    <p>
-                        <span data-property="address.street"></span>
-                        <br/><span data-property="address.postal"></span>&nbsp;<span data-property="address.city"></span>,&nbsp;<span data-property="address.country"></span>
-                    </p>
-                </div>
-                <ul class="list-unstyled" data-aos="flip-right">
-                    <li><i class="fas fa-phone grey"></i>&nbsp;<a class="tel" rel="nofollow" href="tel:"
-                                                                  data-property-href="tel" data-property="tel"></a>
-                    </li>
-                    <li><i class="fas fa-envelope grey"></i> <a class="email" rel="nofollow" href="mailto:"
-                                                                data-property-href="email" data-property="email"></a>
-                    </li>
-                </ul>
-                <br>
-                <div class="row">
-                    <div class="col text-right">
-                        <span data-aos="fade-right">
-                            <a href="#" data-property-href="facebook"
-                               target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
-                        </span>
-                    </div>
-                    <div class="col text-left">
-                        <span data-aos="fade-left">
-                            <a href="#" data-property-href="instagram" target="_blank"><i
-                                    class="fab fa-instagram fa-3x"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <hr class="small">
-                    </div>
+                    <hr class="col-md-12">
                 </div>
 
-                <div data-aos="fade-down">
+                <div data-aos="fade-up">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-lg-12 text-center">
                             <h4><strong data-translate="text.opening.hours"></strong></h4>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-lg-12 text-center">
                             <div class="row openinghours">
                                 <div class="col text-right" data-translate="text.monday"></div>
                                 <div class="col text-left" data-openinghours="monday">
@@ -298,35 +270,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <hr class="small">
+                <div class="row">
+                    <hr class="col-md-12">
                 </div>
             </div>
-        </div>
-    </div>
-</footer>
+        </footer>
+    </section><!-- End Contact Section -->
+</main>
 
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top" style="display: inline;">
-    <i class="fas fa-angle-up"></i>
-</a>
+<!-- Vendor JS Files -->
+<script src="theme/assets/vendor/jquery/jquery.min.js"></script>
+<script src="theme/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="theme/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="theme/assets/vendor/php-email-form/validate.js"></script>
+<script src="theme/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="theme/assets/vendor/counterup/counterup.min.js"></script>
+<script src="theme/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="theme/assets/vendor/aos/aos.js"></script>
 
-<!-- Bootstrap core JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"
-        integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl"
-        crossorigin="anonymous"></script>
-
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
-        integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
-
-<!-- Custom scripts for this template -->
-<script src="theme/js/stylish-portfolio.min.js"></script>
-
-<script src="js/parallax.min.js" type="text/javascript"></script>
-<script src="js/aos.min.js" type="text/javascript"></script>
+<!-- Template Main JS File -->
+<script src="theme/assets/js/main.js"></script>
 
 <script src="js/ui.min.js" type="text/javascript"></script>
 
@@ -347,8 +310,8 @@
     {
         "@context": "http://schema.org",
         "@type": "LocalBusiness",
-        "name": "Fonzo, craft kitchen",
-        "image": "https://www.fonzo.es/img/loading-logo.png",
+        "name": "Fonzo, cosy eatery",
+        "image": "https://www.fonzo.es/img/logo.png",
         "@id": "https://www.fonzo.es",
         "url": "https://www.fonzo.es",
         "telephone": "+34 653 20 35 86",
