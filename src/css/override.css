@@ -16,6 +16,10 @@
     font-display: swap;
 }
 
+button.mobile-nav-toggle {
+    top: 35px
+}
+
 body, .nav-menu a, .nav-menu a:hover {
     font-family: "Typewriter", sans-serif;
 }
