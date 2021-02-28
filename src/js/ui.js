@@ -109,7 +109,12 @@
 
     function setLinks() {
         $("[data-property-href]").each(function () {
-            $(this).attr("href", $(this).attr("href") + PROPERTIES[$(this).data('property-href')]);
+            var href = $(this).attr("href");
+            if (href === "#") {
+                $(this).attr("href", PROPERTIES[$(this).data('property-href')]);
+            } else {
+                $(this).attr("href", href + PROPERTIES[$(this).data('property-href')]);
+            }
         });
     }
 
