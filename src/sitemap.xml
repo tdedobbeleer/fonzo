@@ -1,95 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- gemaakt met www.xml-sitemaps.nl -->
-  <!-- aangeboden door www.metatags.nl -->
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
   <url>
     <loc>https://www.fonzo.es/</loc>
-    <xhtml:link rel="alternate" hreflang="es"
-                href="https://www.fonzo.es"/>
-    <xhtml:link rel="alternate" hreflang="en"
-                href="https://www.fonzo.es/en"/>
-    <xhtml:link rel="alternate" hreflang="nl"
-                href="https://www.fonzo.es/nl"/>
+    <lastmod>2021-03-31T12:59:30+00:00</lastmod>
+    <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.fonzo.es/en/</loc>
-    <xhtml:link rel="alternate" hreflang="en"
-                href="https://www.fonzo.es/en"/>
-    <xhtml:link rel="alternate" hreflang="es"
-                href="https://www.fonzo.es/es"/>
-    <xhtml:link rel="alternate" hreflang="nl"
-                href="https://www.fonzo.es/nl"/>
-    <lastmod>2018-07-04</lastmod>
-    <changefreq>monthly</changefreq>
-
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.fonzo.es/es/</loc>
-    <xhtml:link rel="alternate" hreflang="en"
-                href="https://www.fonzo.es/en"/>
-    <xhtml:link rel="alternate" hreflang="es"
-                href="https://www.fonzo.es/es"/>
-    <xhtml:link rel="alternate" hreflang="nl"
-                href="https://www.fonzo.es/nl"/>
-    <lastmod>2018-07-04</lastmod>
-    <changefreq>monthly</changefreq>
-
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.fonzo.es/nl/</loc>
-    <xhtml:link rel="alternate" hreflang="en"
-                href="https://www.fonzo.es/en"/>
-    <xhtml:link rel="alternate" hreflang="es"
-                href="https://www.fonzo.es/es"/>
-    <xhtml:link rel="alternate" hreflang="nl"
-                href="https://www.fonzo.es/nl"/>
-    <lastmod>2018-07-04</lastmod>
-    <changefreq>monthly</changefreq>
-
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://www.fonzo.es/food</loc>
-    <xhtml:link rel="alternate" hreflang="es"
-                href="https://www.fonzo.es/food"/>
-    <xhtml:link rel="alternate" hreflang="en"
-                href="https://www.fonzo.es/en/food"/>
-    <xhtml:link rel="alternate" hreflang="nl"
-                href="https://www.fonzo.es/nl/food"/>
-    <lastmod>2018-07-04</lastmod>
-    <changefreq>monthly</changefreq>
-
-    <priority>1.0</priority>
+    <loc>https://www.fonzo.es/menu</loc>
+    <lastmod>2021-03-31T12:59:30+00:00</lastmod>
+    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://www.fonzo.es/contact</loc>
-    <xhtml:link rel="alternate" hreflang="es"
-                href="https://www.fonzo.es/contact"/>
-    <xhtml:link rel="alternate" hreflang="en"
-                href="https://www.fonzo.es/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="nl"
-                href="https://www.fonzo.es/nl/contact"/>
-    <lastmod>2018-07-04</lastmod>
-    <changefreq>monthly</changefreq>
-
-    <priority>1.0</priority>
+    <lastmod>2021-03-31T12:59:30+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.fonzo.es/about</loc>
-    <xhtml:link rel="alternate" hreflang="es"
-                href="https://www.fonzo.es/about"/>
-    <xhtml:link rel="alternate" hreflang="en"
-                href="https://www.fonzo.es/en/about"/>
-    <xhtml:link rel="alternate" hreflang="nl"
-                href="https://www.fonzo.es/nl/about"/>
-    <lastmod>2018-07-04</lastmod>
-    <changefreq>monthly</changefreq>
-
-    <priority>1.0</priority>
+    <loc>https://www.fonzo.es/philosophy</loc>
+    <lastmod>2021-03-31T12:59:30+00:00</lastmod>
+    <priority>0.40</priority>
   </url>
 </urlset>

@@ -54,12 +54,12 @@
     var ES = 'es';
 
     //Init
-    downloadIfRequested();
     initializeSignature();
     setOpeningHours();
     setContactDetails();
     setMap();
     initializeLang();
+    moveIfRequested();
     //initializeLangButtons();
 
     //always init lastly
@@ -195,8 +195,9 @@
         setQuotes();
     }
 
-    function downloadIfRequested() {
-        switch (window.location.pathname) {
+    function moveIfRequested() {
+        var pathName = window.location.pathname;
+        switch (pathName) {
             case "/menu":
                 window.location.assign(PROPERTIES['download.menu']);
                 break;
@@ -205,9 +206,11 @@
                 break;
             case "/vinos":
                 window.location.assign(PROPERTIES['download.vinos']);
-                break;
+                break;               
             default:
-            // Nothing
+                if (pathName !== '/' && !pathName.includes('#'))
+                $(document).scrollTop( $(pathName.replace('/', "#")).offset().top );
+                break;
         }
 
 
