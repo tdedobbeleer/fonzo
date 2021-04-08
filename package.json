@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Fonzo",
   "scripts": {
-    "lite": "npm run critical && lite-server --port 8080 --baseDir=./src",
+    "lite": "npm run critical && npm run minify && lite-server --port 8080 --baseDir=./src",
     "critical": "node critical.js",
     "minify": "uglifyjs --compress --mangle --output src/js/ui.min.js src/js/ui.js",
     "start": "npm run lite",
-    "local-deploy-test": "npm run minify && firebase use fonzo-test && firebase deploy --only hosting",
-    "local-deploy": "npm run minify && firebase use fonzo-prod && firebase deploy --only hosting",
+    "local-deploy-test": "npm run critical && npm run minify && firebase use fonzo-test && firebase deploy --only hosting",
+    "local-deploy": "npm run critical && npm run minify && firebase use fonzo-prod && firebase deploy --only hosting",
     "travis-deploy-test": "firebase use fonzo-test --token $FIREBASE_TOKEN --non-interactive && firebase deploy --only hosting",
     "travis-deploy": "firebase use --token $FIREBASE_TOKEN --non-interactive fonzo-prod && firebase deploy --token $FIREBASE_TOKEN --non-interactive --only hosting"
   },
