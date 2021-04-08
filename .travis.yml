@@ -8,6 +8,7 @@ before_script: # commands to run before the build step
 
 script: # the build step
   - npm install
+  - npm run critical
   - npm run minify
 after_success:
   - npm run travis-deploy-test
