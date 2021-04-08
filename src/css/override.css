@@ -17,53 +17,51 @@
 }
 
 button.mobile-nav-toggle {
-    top: 35px
+    top: 35px !important;
 }
 
 body, .nav-menu a, .nav-menu a:hover {
-    font-family: "Typewriter", sans-serif;
+    font-family: "Typewriter", sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6, .section-title p, .section-title h2 {
-    font-family: "SteepTypewriter", sans-serif;
+    font-family: "SteepTypewriter", sans-serif !important;
 }
 
 #hero {
-    background: url("../img/bg.jpg") top center no-repeat;
-!important;
-    background-size: cover;
-!important;
+    background: url("../img/bg.jpg") top center no-repeat !important;
+    background-size: cover !important;
 }
 
 .about .content ul i, .about .bullet {
-    font-size: 26px;
-    color: #55a086;
+    font-size: 26px !important;
+    color: #55a086 !important;
 }
 
 .get-started-btn, .back-to-top i {
-    background: #55a086;
+    background: #55a086 !important;
 }
 
 a, .nav-menu a {
-    color: #55a086;
+    color: #55a086 !important;
 }
 
 a:hover, .nav-menu a:hover, .get-started-btn:hover, .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-    color: #6bd0b2;
+    color: #6bd0b2 !important;
 }
 
 .back-to-top i:hover {
-    background-color: #6bd0b2;
+    background-color: #6bd0b2 !important;
 }
 
 hr {
-    color: #c0922d;
-    background-color: #c0922d;
+    color: #c0922d !important;
+    background-color: #c0922d !important;
 }
 
 .section-title h2::after {
-    background: #c0922d;
-    width: 100px;
+    background: #c0922d !important;
+    width: 100px !important;
 }
 
 .map {
@@ -71,36 +69,34 @@ hr {
 }
 
 #header .logo img {
-    max-height: 110px;
-!important;
+    max-height: 110px !important;
 }
 
 #hero h1 {
-    text-shadow: -6px -3px 4px #252323;
-    font-size: 140px;
-!important font-style: bold;
-    font-family: "SteepTypewriter", sans-serif;
+    text-shadow: -6px -3px 4px #252323 !important;
+    font-size: 140px !important;
+    font-style: bold !important;
+    font-family: "SteepTypewriter", sans-serif !important;
 }
 
 #hero h2 {
     text-shadow: -6px -3px 4px #252323;
-    font-size: 60px;
-    padding-top: 40px;
-!important font-style: bold;
+    font-size: 60px !important;
+    padding-top: 40px !important;
+    font-style: bold !important;
 }
 
 @media (max-width: 991px) {
     #header .logo img {
-        max-height: 70px;
-    !important;
+        max-height: 70px !important;
     }
 
     #hero h1 {
-        font-size: 92px;
+        font-size: 92px !important;
     }
 
     #hero h2 {
-        font-size: 30px;
+        font-size: 30px !important;
     }
 
     .modal {
