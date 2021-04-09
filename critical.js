@@ -24,9 +24,9 @@ critical.generate({
 
     // Output results to file
     target: {
-        css: 'src/critical.css',
-        html: 'src/index.html',
-        uncritical: 'src/uncritical.css',
+        css: 'critical.css',
+        html: 'index.html',
+        uncritical: 'uncritical.css',
     },
 
     // Minify critical-path CSS when inlining
