@@ -24,9 +24,9 @@ critical.generate({
 
     // Output results to file
     target: {
-        css: 'critical.css',
-        html: 'index.html',
-        uncritical: 'uncritical.css',
+        css: 'src/critical.css',
+        html: 'src/index.html',
+        uncritical: 'src/uncritical.css',
     },
 
     // Minify critical-path CSS when inlining
@@ -34,4 +34,12 @@ critical.generate({
 
     // Extract inlined styles from referenced stylesheets
     extract: true,
+},(err, output) => {
+    if (err) {
+        console.error(err);
+    } else if (output) {
+        console.log(output)
+        console.log('Generated critical CSS');
+    }
 });
+
