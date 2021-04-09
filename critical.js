@@ -38,7 +38,7 @@ critical.generate({
     if (err) {
         console.error(err);
     } else if (output) {
-        console.log(output)
+        //console.log(output)
         console.log('Generated critical CSS');
     }
 });
