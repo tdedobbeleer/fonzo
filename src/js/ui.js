@@ -208,7 +208,7 @@
                 window.location.assign(PROPERTIES['download.vinos']);
                 break;               
             default:
-                if (pathName !== '/' && !pathName.includes('#'))
+                if (!pathName.endsWith('/') && !pathName.includes('#'))
                 $(document).scrollTop( $(pathName.replace('/', "#")).offset().top );
                 break;
         }
