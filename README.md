@@ -1,6 +1,6 @@
 ##Fonzo
 
-[![Build Status](https://travis-ci.org/tdedobbeleer/fonzo.svg?branch=master)](https://travis-ci.org/tdedobbeleer/fonzo)
+[![Build Status](https://travis-ci.com/tdedobbeleer/fonzo.svg?branch=master)](https://travis-ci.com/tdedobbeleer/fonzo)
 <br>
 
 To run locally:
