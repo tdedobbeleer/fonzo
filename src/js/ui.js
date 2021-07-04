@@ -41,11 +41,11 @@
         'download.vinos' : 'https://drive.google.com/uc?export=download&id=1Is6l3-UbnuUbXAJHhH6thH8_9wB2eQyL',
         'openinghours.monday': [],
         'openinghours.tuesday': [],
-        'openinghours.wednesday': [{'open': '20:00', 'closed': '23:30'}],
-        'openinghours.thursday': [{'open': '20:00', 'closed': '23:30'}],
-        'openinghours.friday': [{'open': '20:00', 'closed': '23:30'}],
-        'openinghours.saturday': [{'open': '20:00', 'closed': '23:30'}],
-        'openinghours.sunday': [{'open': '20:00', 'closed': '23:30'}]
+        'openinghours.wednesday': [{'open': '20:00', 'closed': '23:00'}],
+        'openinghours.thursday': [{'open': '13:30', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:00'}],
+        'openinghours.friday': [{'open': '13:30', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:00'}],
+        'openinghours.saturday': [{'open': '13:30', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:00'}],
+        'openinghours.sunday': [{'open': '13:30', 'closed': '16:00'}, {'open': '20:00', 'closed': '23:00'}],
     };
 
     var DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
