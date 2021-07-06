@@ -10,6 +10,9 @@ script: # the build step
   - npm install
   - npm run critical
   - npm run minify
+  - curl -L -o "./src/files/menu.pdf"  "https://drive.google.com/uc?export=download&id=19jJ2Av6VDkMbHgufm-HkYZHIe08WC6va"
+  - curl -L -o "./src/files/drinks.pdf"  "https://drive.google.com/uc?export=download&id=1GgADTtPWS2h-YSEpk7K2hMma5fY5yaec"
+  - curl -L -o "./src/files/vinos.pdf"  "https://drive.google.com/uc?export=download&id=1Is6l3-UbnuUbXAJHhH6thH8_9wB2eQyL"
 after_success:
   - npm run travis-deploy-test
   - test $TRAVIS_BRANCH = "master" && npm run travis-deploy
