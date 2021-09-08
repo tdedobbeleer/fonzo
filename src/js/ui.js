@@ -210,7 +210,7 @@
                 break;
             case "/vinos":
                 window.location.assign(PROPERTIES['download.vinos']);
-                break;               
+                break;
             default:
                 if (!pathName.endsWith('/') && !pathName.includes('#'))
                 $(document).scrollTop( $(pathName.replace('/', "#")).offset().top );
