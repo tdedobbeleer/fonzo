@@ -203,7 +203,6 @@
     function moveIfRequested() {
         var pathName = window.location.pathname;
         switch (pathName) {
-            /**
             case "/menu":
                 window.location.assign(PROPERTIES['download.menu']);
                 break;
@@ -214,7 +213,7 @@
             case "/vinos":
                 window.location.assign(PROPERTIES['download.vinos']);
                 break;
-                       **/
+
             default:
                 if (!pathName.endsWith('/') && !pathName.includes('#'))
                 $(document).scrollTop( $(pathName.replace('/', "#")).offset().top );
