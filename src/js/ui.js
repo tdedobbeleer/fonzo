@@ -42,8 +42,8 @@
         'openinghours.monday': [],
         'openinghours.tuesday': [],
         'openinghours.wednesday': [],
-        'openinghours.thursday': [{'open': '14:00', 'closed': '16:30'}, {'open': '20:00', 'closed': '23:00'}],
-        'openinghours.friday': [{'open': '14:00', 'closed': '16:30'}, {'open': '20:00', 'closed': '23:00'}],
+        'openinghours.thursday': [{'open': '20:00', 'closed': '23:00'}],
+        'openinghours.friday': [{'open': '20:00', 'closed': '23:00'}],
         'openinghours.saturday': [{'open': '14:00', 'closed': '16:30'}, {'open': '20:00', 'closed': '23:00'}],
         'openinghours.sunday': [{'open': '14:00', 'closed': '16:30'}, {'open': '20:00', 'closed': '23:00'}],
     };
