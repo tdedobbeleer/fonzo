@@ -46,11 +46,11 @@
         'see.drinks' : 'https://drive.google.com/file/d/1GgADTtPWS2h-YSEpk7K2hMma5fY5yaec/view?usp=sharing',
         'openinghours.monday': [],
         'openinghours.tuesday': [],
-        'openinghours.wednesday': [{'open': '20:00', 'closed': '23:30'}],
-        'openinghours.thursday': [{'open': '20:00', 'closed': '23:30'}],
-        'openinghours.friday': [{'open': '20:00', 'closed': '23:30'}],
-        'openinghours.saturday': [{'open': '20:00', 'closed': '23:30'}],
-        'openinghours.sunday': [{'open': '20:00', 'closed': '23:30'}]
+        'openinghours.wednesday': [],
+        'openinghours.thursday': [{'open': '20:00', 'closed': '23:00'}],
+        'openinghours.friday': [{'open': '20:00', 'closed': '23:00'}],
+        'openinghours.saturday': [{'open': '14:00', 'closed': '16:30'}, {'open': '20:00', 'closed': '23:00'}],
+        'openinghours.sunday': [{'open': '14:00', 'closed': '16:30'}, {'open': '20:00', 'closed': '23:00'}],
     };
 
     var DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
