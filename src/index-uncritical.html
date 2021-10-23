@@ -34,6 +34,8 @@
 
 <body id="page-top">
 
+<div class="web-page">
+
     <!-- ======= Header ======= -->
     <div class="fixed-top" id="header">
         <div class="container d-flex align-items-center">
@@ -87,6 +89,37 @@
             </div>
         </div>
 
+        <div aria-hidden="true" aria-labelledby="qrModalLabel" class="modal fade" id="qr-modal" role="dialog"
+             tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="modal-title">Menu</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>Take a look and choose wisely</p>
+                                    <p><a data-property-href="see.carta" href="" target="_blank">Platos para compartir</a>/<a   data-property-href="see.menu" href="" target="_blank">Dishes to share</a></p>
+                                    <p><a data-property-href="see.bebidas" href="" target="_blank">Drinks</a>/<a data-property-href="see.drinks" href="" target="_blank">Bebidas</a></p>
+                                    <p><a data-property-href="see.wine" href="" target="_blank">Wine</a>/<a data-property-href="see.wine" href="" target="_blank">Vino</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ======= About Section ======= -->
         <section class="about" id="philosophy">
             <div class="container">
@@ -176,19 +209,19 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-2 col-md-3">
-                        <a class="icon-box" data-aos="zoom-in" data-aos-delay="100" href="https://drive.google.com/file/d/19jJ2Av6VDkMbHgufm-HkYZHIe08WC6va/view" target="_blank">
-                            <h3>Food</h3>
+                    <div class="col-3">
+                        <a class="icon-box" data-aos="zoom-in" data-aos-delay="100" href="" target="_blank" data-property-href="see.menu">
+                            <h3>Dishes to share</h3>
                         </a>
                     </div>
-                    <div class="col-lg-2 col-md-3">
-                        <a class="icon-box" data-aos="zoom-in" data-aos-delay="100" href="https://drive.google.com/file/d/1GgADTtPWS2h-YSEpk7K2hMma5fY5yaec/view?usp=sharing" target="_blank">
+                    <div class="col-3">
+                        <a class="icon-box" data-aos="zoom-in" data-aos-delay="100" href="" target="_blank" data-property-href="see.drinks">
                             <h3>Drinks</h3>
                         </a>
                     </div>
-                    <div class="col-lg-2 col-md-3">
-                        <a class="icon-box" data-aos="zoom-in" data-aos-delay="100" href="https://drive.google.com/file/d/1Is6l3-UbnuUbXAJHhH6thH8_9wB2eQyL/view?usp=sharing" target="_blank">
-                            <h3>Wines</h3>
+                    <div class="col-3">
+                        <a class="icon-box" data-aos="zoom-in" data-aos-delay="100" href="" target="_blank" data-property-href="see.wine">
+                            <h3>Wine</h3>
                         </a>
                     </div>
                 </div>
@@ -306,6 +339,7 @@
         </section><!-- End Contact Section -->
     </main>
 
+</div>
 
 <!-- Vendor JS Files -->
 <script src="theme/assets/vendor/jquery/jquery.min.js"></script>

@@ -40,6 +40,10 @@
         'download.carta' : 'https://drive.google.com/uc?export=download&id=19jJ2Av6VDkMbHgufm-HkYZHIe08WC6va',
         'download.drinks' : 'https://drive.google.com/uc?export=download&id=1GgADTtPWS2h-YSEpk7K2hMma5fY5yaec',
         'download.vinos' : 'https://drive.google.com/uc?export=download&id=1Is6l3-UbnuUbXAJHhH6thH8_9wB2eQyL',
+        'see.menu' : 'https://drive.google.com/file/d/15n1BZol9-RlKCJOi2D4Taq7ZgAL8dy9Z/view?usp=sharing',
+        'see.carta' : 'https://drive.google.com/file/d/19jJ2Av6VDkMbHgufm-HkYZHIe08WC6va/view?usp=sharing',
+        'see.wine' : 'https://drive.google.com/file/d/1Is6l3-UbnuUbXAJHhH6thH8_9wB2eQyL/view?usp=sharing',
+        'see.drinks' : 'https://drive.google.com/file/d/1GgADTtPWS2h-YSEpk7K2hMma5fY5yaec/view?usp=sharing',
         'openinghours.monday': [],
         'openinghours.tuesday': [],
         'openinghours.wednesday': [],
@@ -199,6 +203,9 @@
     function moveIfRequested() {
         var pathName = window.location.pathname;
         switch (pathName) {
+            case "/qr-menu":
+                $('#qr-modal').modal('show')
+                break;
             case "/menu":
                 window.location.assign(PROPERTIES['download.menu']);
                 break;

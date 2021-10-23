@@ -86,6 +86,33 @@ hr {
     font-style: bold !important;
 }
 
+#qr-modal {
+  z-index: 9999;
+}
+
+#qr-modal .modal-dialog {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+}
+#qr-modal .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+}
+#qr-modal .modal-body {
+  overflow-y: auto;
+}
+
+#qr-modal div.modal-body {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url("../img/logo.png");
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 @media (max-width: 991px) {
     #header .logo img {
         max-height: 70px !important;

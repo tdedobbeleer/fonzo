@@ -36,7 +36,7 @@ critical.generate({
     extract: true,
 },(err, output) => {
     if (err) {
-        console.error(err);
+        throw new Error(err.toString());
     } else if (output) {
         //console.log(output)
         console.log('Generated critical CSS');
