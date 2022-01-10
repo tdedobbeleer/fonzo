@@ -1,10 +1,10 @@
 (function ($) {
     var LANG_EN = {
         'nav.philosophy': 'Philosophy',
-        'nav.book.now': 'Book now',
+        'nav.book': 'Book your table',
         'nav.home': 'Home',
         'nav.menu': 'Menu',
-        'nav.contact': 'Contact',
+        'nav.contact': 'Contact & book',
         'text.monday': "Monday",
         'text.tuesday': "Tuesday",
         'text.wednesday': "Wednesday",
@@ -15,12 +15,9 @@
         'text.closed': 'Closed',
         'text.opening.hours': 'Opening hours',
         'text.quotes' : [
-            {"text" : "What a nice place! Tasted delicious food, great setting, felt as being in a cosy livingroom.", "source" : "Ann D. via Facebook", "url" : "https://www.facebook.com/ann.depoorter.927/posts/2060467344206003:0"},
-            {"text" : "The only way to know why we love this place, is to go there and enjoy!", "source" : "Agnes D. via Facebook", "url" : "https://www.facebook.com/agnes.deboeck.5/posts/2253377521339779"},
-            {"text" : "This is unique in Málaga. The owners are very passionate to create the best and most original tapas.", "source" : "Moniek V. via Google", "url" : "https://www.google.com/maps/contrib/113732323421234179423/place/ChIJd_8ghKP3cg0R5x5rXGr9tJE/@36.7244451,-4.4202563,17z/data=!4m6!1m5!8m4!1e1!2s113732323421234179423!3m1!1e1?hl=en"},
-            {"text" : "It has become one of my favorite places. Very hospitable and a very good service. Ideal to drink a vermouth.", "source" : "María O. via Google", "url" : "https://www.google.com/maps/contrib/116689621246882345984/place/ChIJd_8ghKP3cg0R5x5rXGr9tJE/@44.0876685,0.3440576,5z/data=!4m6!1m5!8m4!1e1!2s116689621246882345984!3m1!1e1?hl=nl-BE"},
-            {"text" : "Very picturesque place with a nice variety of rich and healthy flavors. Strongly recommended.", "source" : "Javi C. via Google", "url" : "https://www.google.com/maps/contrib/100582116992476836427/place/ChIJd_8ghKP3cg0R5x5rXGr9tJE/@39.8160002,-6.7148075,7z/data=!4m4!1m3!8m2!1e1!2s100582116992476836427?hl=nl-BE"},
-            {"text" : "Small, quirky, very friendly and just a fantastic vibe. The best place to grab a drink and a bite of tapas in Málaga.", "source" : "Patrick R. via Facebook", "url" : "https://www.facebook.com/patrick.redmond01/posts/10156556001002856"}
+            {"text" : "What a wonderful and surprising restaurant. After a few days of some average Malaga restaurants we decided to venture slightly further out from the old town and we’re rewarded with a wonderful evening filled with exquisite food, insightful descriptions and ‘one more please!’ cocktails. The care and passion from Piet and Julie is clear in every part of Fonzo. A unique night out and highly, highly recommended.", "source" : "Declan C. via Google", "url" : "https://goo.gl/maps/ereg91Ea9MtQ1RFt9"},
+            {"text" : "Absolutely wonderful on every level - amazing food, delicious wine, gorgeous decor, excellent service. Couldn't fault this place at all! We had the kofta, dumplings, a cous cous stew, and then shared a dessert. It was all exceptional! Both the food and the wine were really fairly priced, so you're getting a lot for your money! If we are ever back in Malaga we will definitely be coming back here.", "source" : "Rachel R. via Google", "url" : "https://goo.gl/maps/67EiEWYL5wzwW4vz9"},
+            {"text" : "Beautifully decorated little restaurant, delicious food make sure to try the lasagne (that's not lasagne) for desert the frozen hummus, never tried vermouth before and unsure which one to have but owner recommended one after a little chat, will definitely be having again. Have to mention the best decorated,and cleanest restroom in malaga. Make sure to book.", "source" : "Margie F. via Google", "url" : "https://goo.gl/maps/cFAgqShVRfozBGZC6"}
         ]
     };
 
@@ -32,6 +29,7 @@
         'address.country': 'Spain',
         'tel': '+34 653 20 35 86',
         'whatsapp': 'https://wa.me/message/DHE4A3W3TPP2P1',
+        'signal' : 'http://signal.me/#p/+34653203586',
         'email': 'fonzomalaga@gmail.com',
         'facebook': 'https://www.facebook.com/fonzomalaga/',
         'instagram': 'https://www.instagram.com/fonzomalaga/',
@@ -240,7 +238,7 @@
             var quotes = [];
             var quotesDiv = $('#quotes');
             quotesDiv.empty();
-            while (quotes.length < 4) {
+            while (quotes.length < 3) {
                 var index = Math.floor(Math.random() * a.length);
                 var rand = a[index];
                 quotes.push(rand);
