@@ -46,6 +46,11 @@ a, .nav-menu a {
     color: #55a086 !important;
 }
 
+button.btn-book.btn.btn-primary {
+    background-color: #55a086 !important;
+    border-color: #55a086 !important
+}
+
 a:hover, .nav-menu a:hover, .get-started-btn:hover, .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
     color: #6bd0b2 !important;
 }
