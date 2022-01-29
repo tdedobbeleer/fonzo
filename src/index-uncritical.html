@@ -3,20 +3,22 @@
 <head>
     <script type="application/ld+json">
         {
-            "@context": "http://schema.org",
-            "@type": "LocalBusiness",
+            "@context": "http:\u002F\u002Fschema.org",
+            "@type": "FoodEstablishment",
             "name": "Fonzo, cosy eatery",
-            "image": "https://www.fonzo.es/img/logo.png",
-            "@id": "https://www.fonzo.es",
             "url": "https://www.fonzo.es",
-            "telephone": "+34 653 20 35 86",
-            "priceRange": "€",
+            "image": "https://www.fonzo.es/img/f-logo.png",
+            "priceRange": "$",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Calle Mariblanca 4",
-                "addressLocality": "Málaga",
+                "addressLocality": "Malaga",
+                "addressRegion": "Andalucia",
                 "postalCode": "29012",
-                "addressCountry": "ES"
+                "addressCountry": {
+                    "@type": "Country",
+                    "name": "Spain"
+                }
             },
             "geo": {
                 "@type": "GeoCoordinates",
@@ -68,7 +70,7 @@
     <div class="fixed-top" id="header">
         <div class="container d-flex align-items-center">
             <!-- Uncomment below if you prefer to use an image logo -->
-            <a aria-label="Go to the top of the page" class="logo mr-auto" href="#page-top"><img alt="" class="img-fluid" src="img/logo.png">
+            <a aria-label="Go to the top of the page" class="logo mr-auto" href="#page-top"><img alt="Logo" class="img-fluid" src="img/f-logo.png">
 
                 <nav class="nav-menu d-none d-lg-block">
                     <ul>
@@ -252,7 +254,7 @@
 
                     <div class="col-lg-6 justify-content-center align-self-center" data-aos="fade-left"
                          data-aos-delay="100">
-                        <img alt="" class="img-fluid img-thumbnail" src="img/about.jpg">
+                        <img alt="About our restaurant" class="img-fluid img-thumbnail" src="img/about.jpg">
                     </div>
 
                 </div>
