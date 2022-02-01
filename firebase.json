@@ -14,16 +14,7 @@
     ],
     "headers": [
       {
-        "source": "**/*.@(gif|ico)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=2592000"
-          }
-        ]
-      },
-      {
-        "source": "**/*.@(jpg|jpeg|png)",
+        "source": "**/*.@(jpg|jpeg|png|gif|ico)",
         "headers": [
           {
             "key": "Cache-Control",
