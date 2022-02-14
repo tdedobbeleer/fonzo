@@ -69,6 +69,9 @@
     setLinks();
     setPoperties();
 
+    //show modal
+    $('#bookModal').modal('show');
+
     function initializeSignature() {
         console.log("" +
             "               _______.\n" +
