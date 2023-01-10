@@ -149,7 +149,7 @@
     };
 
     var PROPERTIES = {
-        'title': 'Fonzo, cosy eatery - Málaga',
+        'title': 'Fonzo, Botanical Experience - Málaga',
         'address.street': 'Calle Mariblanca 4',
         'address.city': 'Málaga',
         'address.postal': '29012',
