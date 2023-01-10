@@ -20,7 +20,7 @@
         '</p>' +
         '<p>13h00 - 14h00 - 15h00</p>' +
         '<p>We only work with reservations so please let us know something at least 24h in advance if you can’t make it!</p>' +
-        '<p>To book, send us a message with <a data-property-href="whatsapp" href="#" rel="nofollow" aria-label="Send a Whatsapp message">WhatsApp</a> or <a data-property-href="signal" href="#" rel="nofollow" aria-label="Send a Signal message">WhatsApp</a></p>' +
+        '<p>To book, send us a message with <a data-property-href="whatsapp" href="#" rel="nofollow" aria-label="Send a Whatsapp message">WhatsApp</a> or <a data-property-href="signal" href="#" rel="nofollow" aria-label="Send a Signal message">Signal</a></p>' +
         '<p><a class="tel" data-property="tel" data-property-href="tel" href="tel:" rel="nofollow" aria-label="Call us"></a></p>' +
         '<p>Please leave your name, phone number & number of guests.</p>'
         ,
@@ -94,7 +94,7 @@
         '</p>' +
         '<p>13h00 - 14h00 - 15h00</p>' +
         '<p>Solo trabajamos con reservaciones entonces por favor avísanos con al menos 24h de antelación si no puede venir!</p>' +
-        '<p>Para reservar, mándanos un mensaje con <a data-property-href="whatsapp" href="#" rel="nofollow" aria-label="Send a Whatsapp message">WhatsApp</a> o <a data-property-href="signal" href="#" rel="nofollow" aria-label="Send a Signal message">WhatsApp</a>.</p>' +
+        '<p>Para reservar, mándanos un mensaje con <a data-property-href="whatsapp" href="#" rel="nofollow" aria-label="Send a Whatsapp message">WhatsApp</a> o <a data-property-href="signal" href="#" rel="nofollow" aria-label="Send a Signal message">Signal</a>.</p>' +
         '<p><a class="tel" data-property="tel" data-property-href="tel" href="tel:" rel="nofollow" aria-label="Call us"></a></p>' +
         '<p>Por favor déjanos su nombre, numero de teléfono y numero de personas.</p>'
         ,
