@@ -79,6 +79,11 @@
                         <li><a aria-label="Download the menu" class="js-scroll-trigger" data-translate="nav.menu" href="#menu"></a></li>
                         <li><a aria-label="What is our philosophy" class="js-scroll-trigger" data-translate="nav.philosophy" href="#philosophy"></a></li>
                         <li><a aria-label="Contact us" class="js-scroll-trigger" data-translate="nav.contact" href="#map"></a></li>
+                        <li>
+                            <a>
+                                <i class="icofont-globe-alt"></i>&nbsp;<span class="lang-select" data-lang="es">ES</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav><!-- .nav-menu -->
             </a>
@@ -93,8 +98,8 @@
     <!-- ======= Hero Section ======= -->
     <section class="d-flex justify-content-center align-items-center" id="hero">
         <div class="container position-relative text-center" data-aos="zoom-in" data-aos-delay="100">
-            <h1>Fonzo</h1>
-            <h2>Flavour above everything</h2>
+            <h1 data-translate="text.fonzo">Fonzo</h1>
+            <h2 data-translate="text.subtitle"></h2>
         </div>
     </section><!-- End Hero -->
 
@@ -109,34 +114,19 @@
                     <div class="modal-header">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-12">
-                                    <h2 class="modal-title">Book your table</h2>
+                                <div class="col-10">
+                                    <h2 class="modal-title" data-translate="text.modal.book.title"></h2>
+                                </div>
+                                <div class="col-2 d-none d-lg-block">
+                                    <span class="float-right">
+                                        <i class="icofont-globe-alt"></i>&nbsp;<span class="lang-select" data-lang="es">ES</span>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-body text-center">
-                            <p>Welcome on the website of Fonzo, a gastronomic restaurant that offers a casual dining concept with sharing plates.</p>
+                    <div class="modal-body text-center" data-translate="text.modal.book.body">
 
-                            <p>Due to the high elaboration of our dishes and small kitchen, we only work with reservations in advance. Each service we only have a few tables available so we can only accept reservations from 2 to 4 persons</p>
-
-                            <p>Please also note that we are not able to take reservations by phone during service! Thank you for understanding!</p>
-
-                            <p>We recommend to book your table a few days in advance if you wish to dine with us. You can choose from the following tables:</p>
-
-                            <p>Thursday till Sunday</p>
-                            <p>Dinner: 18h00 - 19h00 - 20h00 - 21h00</p>
-
-                            <p>Sunday lunch<br/>
-                            (Only with bookings at least 24h in advance)
-                            </p>
-                            <p>13h00 - 14h00 - 15h00</p>
-
-                        <p>We only work with reservations so please let us know something at least 24h in advance if you can’t make it!</p>
-
-                        <p>To book, send us a message with <a data-property-href="whatsapp" href="#" rel="nofollow" aria-label="Send a Whatsapp message">WhatsApp</a> or <a data-property-href="signal" href="#" rel="nofollow" aria-label="Send a Signal message">WhatsApp</a> or give us a call (<a class="tel" data-property="tel" data-property-href="tel" href="tel:" rel="nofollow" aria-label="Call us"></a>)</p>
-
-                        <p>Please leave your name, phone number & number of guests.</p>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
@@ -152,8 +142,13 @@
                     <div class="modal-header">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-12">
-                                    <h2 class="modal-title">Menu</h2>
+                                <div class="col-10">
+                                    <h2 class="modal-title" data-translate="text.menu.title"></h2>
+                                </div>
+                                <div class="col-2">
+                                    <span class="float-right">
+                                        <i class="icofont-globe-alt"></i>&nbsp;<span class="lang-select" data-lang="es">ES</span>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -162,29 +157,29 @@
                         <div class="container-fluid">
                             <div class="row features">
                                 <div class="col-12">
-                                    <p>Discover our flavours</p>
+                                    <p data-translate="text.menu.subtitle"></p>
                                 </div>
-                                <div class="col-12 text-center">
-                                    <a class="btn btn-block" href="" target="_blank" data-property-href="see.carta">
-                                        <h3>Platos para compartir</h3>
+                                <div class="col-12 text-center" data-localization-show="en">
+                                    <a class="btn btn-block" href="" target="_blank" data-property-href="see.menu">
+                                        <h3 data-translate="text.menu.dishes"></h3>
                                     </a>
                                 </div>
 
-                                <div class="col-12 text-center">
-                                    <a class="btn btn-block" href="" target="_blank" data-property-href="see.menu">
-                                        <h3>Dishes to share</h3>
+                                <div class="col-12 text-center" data-localization-show="es">
+                                    <a class="btn btn-block" href="" target="_blank" data-property-href="see.carta">
+                                        <h3 data-translate="text.menu.dishes"></h3>
                                     </a>
                                 </div>
 
                                 <div class="col-12 text-center">
                                     <a class="btn btn-block" href="" target="_blank" data-property-href="see.drinks">
-                                        <h3>Drinks | Bebidas</h3>
+                                        <h3 data-translate="text.menu.drinks"></h3>
                                     </a>
                                 </div>
 
                                 <div class="col-12 text-center">
                                     <a class="btn btn-block" href="" target="_blank" data-property-href="see.wine">
-                                        <h3>Wine | Vino</h3>
+                                        <h3 data-translate="text.menu.wine"></h3>
                                     </a>
                                 </div>
                             </div>
@@ -201,8 +196,8 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>About</h2>
-                    <p>What do we stand for?</p>
+                    <h2 data-translate="text.philosophy.title"></h2>
+                    <p data-translate="text.philosophy.subtitle"></p>
                 </div>
 
                 <div class="row">
@@ -210,49 +205,24 @@
                     <div class="col-lg-6 pt-4 pt-lg-0 content">
                         <ul>
                             <li data-aos="fade-right">
-                                <span class="bullet">Fresh</span>
-                                <p>Our kitchen is built around fresh vegetables, fresh
-                                    herbs and tasteful spices. We start from pure
-                                    ingredients and make almost everything ourselves,
-                                    always avoiding processed food. We love to work
-                                    with local and ecological ingredients, top quality
-                                    products with great taste.</p>
+                                <span class="bullet" data-translate="text.philosophy.bullet.1.title"></span>
+                                <p data-translate="text.philosophy.bullet.1.body"></p>
                             </li>
                             <li data-aos="fade-left">
-                                <span class="bullet">Dishes to share</span>
-                                <p>So you can savour a bit of everything and above all,
-                                    share the tasting experience in the company of your
-                                    friends or family. We bring you slow food that takes
-                                    time to prepare and we also want you to truly
-                                    appreciate all the flavors so they are served one
-                                    dish at a time. We would like to offer you a casual dining experience in Málaga.
-                                </p>
+                                <span class="bullet" data-translate="text.philosophy.bullet.2.title"></span>
+                                <p data-translate="text.philosophy.bullet.2.body"></p>
                             </li>
                             <li data-aos="fade-right">
-                                <span class="bullet">Authentic creations</span>
-                                <p>All of our dishes are made in our little kitchen with love,
-                                    passion, craft and eye for detail. We enjoy making original
-                                    and creative dishes that you will not find elsewhere,
-                                    using different techniques. We are constantly innovating,
-                                    always searching for perfection so our menu is always evolving.
-                                </p>
+                                <span class="bullet" data-translate="text.philosophy.bullet.3.title"></span>
+                                <p data-translate="text.philosophy.bullet.3.body"></p>
                             </li>
                             <li data-aos="fade-left">
-                                <span class="bullet">Sustainability</span>
-                                <p>We are very concerned with the well being of people, animals and our environment.
-                                    That is why we want to be part of a positive movement and have chosen to serve plant
-                                    based creations. We truly believe that what we eat & how we live determines our health
-                                    & the preservation of our planet for future generations! We don’t compromise on
-                                    flavour and create a unique gastronomic plant-based experience to remember.
-                                </p>
+                                <span class="bullet" data-translate="text.philosophy.bullet.4.title"></span>
+                                <p data-translate="text.philosophy.bullet.4.body"></p>
                             </li>
                             <li data-aos="fade-right">
-                                <span class="bullet">Quality drinks&nbsp;<i class="icofont-soft-drinks"></i></span>
-                                <p>"Looking for an aperitif?" Enjoy our selection of Spanish vermuts, sparkling wines, gins or homemade aperitifs.
-                                    "Love to wine and dine?" Perfect, just like us! That is why we are always looking for interesting grapes and wines from small bodegas.
-                                    "Prefer something without alcohol?" No problem, try our homemade lemonades with fresh fruits or cold brewed iced teas.
-                                </p>
-                                <p>Be welcome, relax and enjoy our world of flavours.</p>
+                                <span class="bullet" data-translate="text.philosophy.bullet.5.title"></span>
+                                <span data-translate="text.philosophy.bullet.5.body"></span>
                             </li>
                         </ul>
 
@@ -267,8 +237,7 @@
 
                 <div class="row">
                     <div class="col-lg-12 pt-4 pt-lg-0 content text-center font-italic">
-                        <p>Everything we serve has been approved by our taste buds!</p>
-                        <p>Piet & Julie</p>
+                        <span data-translate="text.philosophy.footer"></span>
                     </div>
 
                 </div>
@@ -284,25 +253,25 @@
         <section id="menu" class="features pt-1">
             <div class="container">
                 <div class="section-title">
-                    <h2>Menu</h2>
-                    <p>Discover our flavours</p>
+                    <h2 data-translate="text.menu.title"></h2>
+                    <p data-translate="text.menu.subtitle"></p>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-4 text-center">
                         <a class="btn btn-block" href="" target="_blank" data-property-href="see.menu" data-aos="zoom-in" data-aos-delay="100">
-                            <h3>Dishes to share</h3>
+                            <h3 data-translate="text.menu.dishes"></h3>
                         </a>
                     </div>
 
                     <div class="col-sm-12 col-md-4 text-center">
                         <a class="btn btn-block" href="" target="_blank" data-property-href="see.drinks" data-aos="zoom-in" data-aos-delay="100">
-                            <h3>Drinks</h3>
+                            <h3 data-translate="text.menu.drinks"></h3>
                         </a>
                     </div>
 
                     <div class="col-sm-12 col-md-4 text-center">
                         <a class="btn btn-block" href="" target="_blank" data-property-href="see.wine" data-aos="zoom-in" data-aos-delay="100">
-                            <h3>Wine</h3>
+                            <h3 data-translate="text.menu.wine"></h3>
                         </a>
                     </div>
                 </div>

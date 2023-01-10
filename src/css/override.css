@@ -16,6 +16,11 @@
     font-display: swap;
 }
 
+.lang-select {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
 button.mobile-nav-toggle {
     top: 35px !important;
 }
