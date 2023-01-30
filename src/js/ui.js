@@ -165,10 +165,9 @@
         'download.carta' : 'https://drive.google.com/uc?export=download&id=19jJ2Av6VDkMbHgufm-HkYZHIe08WC6va',
         'download.drinks' : 'https://drive.google.com/uc?export=download&id=1GgADTtPWS2h-YSEpk7K2hMma5fY5yaec',
         'download.vinos' : 'https://drive.google.com/uc?export=download&id=1Is6l3-UbnuUbXAJHhH6thH8_9wB2eQyL',
-        'see.menu' : 'https://drive.google.com/file/d/15n1BZol9-RlKCJOi2D4Taq7ZgAL8dy9Z/view?usp=sharing',
-        'see.carta' : 'https://drive.google.com/file/d/19jJ2Av6VDkMbHgufm-HkYZHIe08WC6va/view?usp=sharing',
-        'see.wine' : 'https://drive.google.com/file/d/1Is6l3-UbnuUbXAJHhH6thH8_9wB2eQyL/view?usp=sharing',
-        'see.drinks' : 'https://drive.google.com/file/d/1GgADTtPWS2h-YSEpk7K2hMma5fY5yaec/view?usp=sharing',
+        'see.menu' : {'en' : 'https://drive.google.com/file/d/15n1BZol9-RlKCJOi2D4Taq7ZgAL8dy9Z/view?usp=sharing', 'es' : 'https://drive.google.com/file/d/19jJ2Av6VDkMbHgufm-HkYZHIe08WC6va/view?usp=sharing'},
+        'see.wine' : {'en' : 'https://drive.google.com/file/d/1WvuAcJX269gTo5BgH7T_VHkBmOJU80XY/view?usp=sharing', 'es' : 'https://drive.google.com/file/d/1WOwSjQtpvnP98-_7uqXSBKN7Of2fZSue/view?usp=sharing'},
+        'see.drinks' : {'en' : 'https://drive.google.com/file/d/1WypXBZESWXlJG3PnJhmlfP2uyDTodcg_/view?usp=sharing', 'es' : 'https://drive.google.com/file/d/1GgADTtPWS2h-YSEpk7K2hMma5fY5yaec/view?usp=sharing'},
         'openinghours.monday': [],
         'openinghours.tuesday': [],
         'openinghours.wednesday': [],
@@ -194,6 +193,7 @@
 
     //always init lastly
     setLinks();
+    setLangDependentLinks();
     setProperties();
 
     //show modal
@@ -243,13 +243,26 @@
     function setLinks() {
         $("[data-property-href]").each(function () {
             var href = $(this).attr("href");
+            var prop = PROPERTIES[$(this).data('property-href')];
             if (href === "#") {
-                $(this).attr("href", PROPERTIES[$(this).data('property-href')]);
+                $(this).attr("href", prop);
             } else {
-                $(this).attr("href", href + PROPERTIES[$(this).data('property-href')]);
+                $(this).attr("href", href + prop);
             }
         });
     }
+
+    function setLangDependentLinks() {
+            $("[data-property-href-lang]").each(function () {
+                var href = $(this).attr("href");
+                var prop = PROPERTIES[$(this).data('property-href-lang')][getLang()];
+                if (href === "#") {
+                    $(this).attr("href", prop);
+                } else {
+                    $(this).attr("href", href + prop);
+                }
+            });
+        }
 
     function setTranslations() {
         $("[data-translate]").each(function () {
