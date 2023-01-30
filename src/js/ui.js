@@ -53,9 +53,8 @@
         '<p>Be welcome, relax and enjoy our world of flavours.</p>'
         ,
         'text.philosophy.footer' : '<p>Everything we serve has been approved by our taste buds!</p><p>Piet & Julie</p>',
-        'text.menu.title' : 'Menu',
-        'text.menu.subtitle' : 'Discover our flavours',
-        'text.menu.dishes' : 'Dishes to share',
+        'text.menu.title' : 'Discover our flavours',
+        'text.menu.dishes' : 'Menu',
         'text.menu.drinks' : 'Drinks',
         'text.menu.wine' : 'Wine',
         'text.monday': "Monday",
@@ -127,9 +126,8 @@
         '<p>Sea bienvenido, relájese y disfrute de nuestro mundo de sabores.</p>'
         ,
         'text.philosophy.footer' : '<p>¡Todo lo que servimos ha sido aprobado por nuestras papilas gustativas!</p><p>Piet & Julie</p>',
-        'text.menu.title' : 'Menú',
-        'text.menu.subtitle' : 'Descubre nuestros sabores',
-        'text.menu.dishes' : 'Platos para compartir',
+        'text.menu.title' : 'Descubre nuestros sabores',
+        'text.menu.dishes' : 'Menú',
         'text.menu.drinks' : 'Bebidas',
         'text.menu.wine' : 'Vinos',
         'text.monday': "Lunes",
