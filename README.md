@@ -1,10 +1,8 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/tdedobbeleer/fonzo/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/tdedobbeleer/fonzo/tree/master)
+
 ##Fonzo
 
-[![Build Status](https://app.travis-ci.com/tdedobbeleer/fonzo.svg?branch=master)](https://app.travis-ci.com/github/tdedobbeleer/fonzo)
-<br>
-
 To run locally:
-
 
 `npm install` (first time)
 
