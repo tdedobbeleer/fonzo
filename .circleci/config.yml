@@ -10,7 +10,7 @@ jobs:
   "build_and_release":
     working_directory: ~/repo
     docker:
-      - image: cimg/node:17.9.1
+      - image: cimg/node:17.9.1-browsers
     steps:
       - checkout
       - run:
