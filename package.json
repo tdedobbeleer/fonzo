@@ -15,8 +15,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "critical": "^3.0.0",
-    "firebase-tools": "^8.5.0",
+    "critical": "^5.0.4",
+    "firebase-tools": "^8.20.0",
     "lite-server": "^2.5.4",
     "uglify-js": "^3.4.9"
   }
