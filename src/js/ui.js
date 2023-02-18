@@ -27,13 +27,13 @@
         'text.philosophy.title' : 'About',
         'text.philosophy.subtitle' : 'What do we stand for?',
         'text.philosophy.bullet.1.title' : 'Fresh',
-        'text.philosophy.bullet.1.body' : 'Our kitchen is built around fresh vegetables, fresh herbs and tasteful spices. We start from pure ' +
+        'text.philosophy.bullet.1.body' : 'Our kitchen is built around tasteful spices, fresh vegetables, legumes & herbs. We start from pure ' +
         'ingredients and make almost everything ourselves, always avoiding processed food. We love to work with local and ecological ingredients, top quality ' +
         'products with great taste.'
         ,
-        'text.philosophy.bullet.2.title' : 'Dishes to share',
-        'text.philosophy.bullet.2.body' : 'So you can savour a bit of everything and above all, share the tasting experience in the company of your ' +
-        'friends or family. We bring you slow food that takes time to prepare and we also want you to truly appreciate all the flavors so they are served one ' +
+        'text.philosophy.bullet.2.title' : 'Menu',
+        'text.philosophy.bullet.2.body' : 'We offer our creations in two different menus so you can have a taste of all the different flavours and share the tasting experience. ' +
+        'We bring you slow food that takes time to prepare and we also want you to truly appreciate all the flavors so they are served one ' +
         'dish at a time. We would like to offer you a casual dining experience in Málaga.'
         ,
         'text.philosophy.bullet.3.title' : 'Authentic creations',
@@ -100,12 +100,12 @@
         'text.philosophy.title' : 'Sobre nosotros',
         'text.philosophy.subtitle' : '¿Qué hacemos?',
         'text.philosophy.bullet.1.title' : 'Fresco',
-        'text.philosophy.bullet.1.body' : 'Nuestra cocina se basa en verduras frescas, hierbas frescas y especias de buen gusto. Empezamos de ingredientes puros y elaboramos ' +
+        'text.philosophy.bullet.1.body' : 'Nuestra cocina se basa en especias de buen gusto, verduras, legumbres y hierbas frescas. Empezamos de ingredientes puros y elaboramos ' +
         'casi todo nosotros mismos, evitando siempre los alimentos procesados. Nos encanta trabajar con ' +
         'ingredientes locales y ecológicos, productos de primera calidad con mucho sabor.'
         ,
-        'text.philosophy.bullet.2.title' : 'Platos para compartir',
-        'text.philosophy.bullet.2.body' : 'Para que puedas saborear un poco de todo y sobre todo, compartir la experiencia de cata en compañía de tus amigos o familiares. Te traemos comida ' +
+        'text.philosophy.bullet.2.title' : 'Menú',
+        'text.philosophy.bullet.2.body' : 'Ofrecemos nuestras creaciones en dos menús para que puedas saborear todo de nuestros sabores y compartir la experiencia de cata. Te traemos comida ' +
         'lenta que lleva tiempo preparar y también queremos que realmente aprecies todos los sabores por eso sirvamos un plato a la vez. Nos gustaría ofrecerte ' +
         'una experiencia gastronómica informal en Málaga.'
         ,
