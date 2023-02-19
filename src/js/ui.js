@@ -9,20 +9,16 @@
         'text.subtitle' : 'Flavour above everything',
         'text.modal.qr.title' : 'Discover our flavours',
         'text.modal.book.title' : 'Book your table',
-        'text.modal.book.body' : '<p>Welcome on the website of Fonzo, a gastronomic restaurant that offers a casual dining concept with sharing plates.</p>' +
-        '<p>Due to the high elaboration of our dishes and small venue and kitchen, we only work with reservations in advance and we can only accept tables of 2 persons.</p>' +
-        '<p>Please also note that we are not able to take reservations by phone during service! Thank you for understanding!</p>' +
-        '<p>We recommend to book your table a few days in advance if you wish to dine with us because we have very limited seating and make everything fresh. You can choose from the following tables:</p>' +
+        'text.modal.book.body' : '<p>Welcome on the website of Fonzo, Botanical Experience, a gastronomic restaurant with a casual dining concept.</p>' +
+        '<p>Please take a look at our menu first and choose one of our menu options before booking your table.</p>' +
+        '<p>We have limited seating so we recommend to book your table at least a few days in advance. Please also note that we can´t take reservations during service!</p>' +
+        '<p>For the moment we can only offer tables for 2 persons. We have the following tables for 2 available:</p>' +
         '<p>Thursday till Sunday</p>' +
         '<p>Dinner: 18h00 - 19h00 - 20h00 - 21h00</p>' +
-        '<p>Sunday lunch<br/>' +
-        '(Only with bookings at least 24h in advance)' +
-        '</p>' +
-        '<p>13h00 - 14h00 - 15h00</p>' +
-        '<p>We only work with reservations so please let us know something at least 24h in advance if you can’t make it!</p>' +
+        '<p>We only work with reservations so please let us know something at least 24h in advance if you can’t make it! It is also important that you arrive on time, otherwise you will loose you reservation!</p>' +
         '<p>To book, send us a message with <a data-property-href="whatsapp" href="#" rel="nofollow" aria-label="Send a Whatsapp message">WhatsApp</a> or <a data-property-href="signal" href="#" rel="nofollow" aria-label="Send a Signal message">Signal</a></p>' +
         '<p><a class="tel" data-property="tel" data-property-href="tel" href="tel:" rel="nofollow" aria-label="Call us"></a></p>' +
-        '<p>Please leave your name, phone number & number of guests.</p>'
+        '<p>Please leave your name, phone number & menu choice.</p>'
         ,
         'text.philosophy.title' : 'About',
         'text.philosophy.subtitle' : 'What do we stand for?',
@@ -82,20 +78,16 @@
         'text.subtitle' : 'Sabor por encima de todo',
         'text.modal.qr.title' : 'Descubre nuestros sabores',
         'text.modal.book.title' : 'Reserva su mesa',
-        'text.modal.book.body' : '<p>Bienvenido a la página web de Fonzo, un restaurante gastronómica que ofrece un concepto de casual dining con platos para compartir.</p>' +
-        '<p>Debido a la alta elaboración de nuestros platos, nuestro local y nuestra cocina pequeña, solo trabajamos con reserva previa y solo podemos aceptar mesas de 2 personas.</p>' +
-        '<p>También no podemos coger reservaciones por teléfono durante el servicio. Gracias por su comprensión.</p>' +
-        '<p>Recomendamos de reservar su mesa con unos días de antelación si quiera cenar con nosotros porque tenemos asientos muy limitados y solo trabajamos con alimentos frescos. Se puede elegir entre las mesas siguientes:</p>' +
+        'text.modal.book.body' : '<p>Bienvenido a la página web de Fonzo, botanical experience, un restaurante gastronómica con un concepto de casual dining.</p>' +
+        '<p>Por favor consulta nuestra carta antes de reservar su mesa y elija uno del menú opciones.</p>' +
+        '<p>Tenemos poca mesas entonces recomendamos de reservar su mesa al menos con unos días de antelación. No podemos aceptar reservaciones durante nuestro servicio!</p>' +
+        '<p>Por el momento solo podemos ofrecer mesas para 2 personas. Se puede elegir entre las mesas para 2 personas siguientes:</p>' +
         '<p>Jueves a Domingo</p>' +
         '<p>Cena: 18h00 - 19h00 - 20h00 - 21h00</p>' +
-        '<p>Domingo almuerzo<br/>' +
-        '(solo con reservas con 24h de antelación)' +
-        '</p>' +
-        '<p>13h00 - 14h00 - 15h00</p>' +
-        '<p>Solo trabajamos con reservaciones entonces por favor avísanos con al menos 24h de antelación si no puede venir!</p>' +
+        '<p>Solo trabajamos con reservaciones entonces por favor avísanos con al menos 24h de antelación si no puede venir! Es muy importante que llegue a tiempo, de lo contrario perderá su reserva!</p>' +
         '<p>Para reservar, mándanos un mensaje con <a data-property-href="whatsapp" href="#" rel="nofollow" aria-label="Send a Whatsapp message">WhatsApp</a> o <a data-property-href="signal" href="#" rel="nofollow" aria-label="Send a Signal message">Signal</a>.</p>' +
         '<p><a class="tel" data-property="tel" data-property-href="tel" href="tel:" rel="nofollow" aria-label="Call us"></a></p>' +
-        '<p>Por favor déjanos su nombre, numero de teléfono y numero de personas.</p>'
+        '<p>Por favor déjanos su nombre, numero de teléfono y el menú elegido.</p>'
         ,
         'text.philosophy.title' : 'Sobre nosotros',
         'text.philosophy.subtitle' : '¿Qué hacemos?',
