@@ -172,7 +172,7 @@
         'openinghours.thursday': [{'open': '18:00', 'closed': '23:00'}],
         'openinghours.friday': [{'open': '18:00', 'closed': '23:00'}],
         'openinghours.saturday': [{'open': '18:00', 'closed': '23:00'}],
-        'openinghours.sunday': [{'open': '13:00', 'closed': '16:00'}, {'open': '18:00', 'closed': '23:00'}],
+        'openinghours.sunday': [{'open': '18:00', 'closed': '23:00'}],
     };
 
     var DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
