@@ -30,7 +30,7 @@ jobs:
           environment:
             BRANCH: <<pipeline.git.branch>>
           command: |
-            if [ $BRANCH -eq "master" ]; then
+            if [ "${BRANCH}" == "master" ]; then
               npm run travis-deploy
             else
               npm run travis-deploy-test
