@@ -11,7 +11,7 @@
         'text.modal.book.title' : 'Book your table',
         'text.modal.book.body' : '<p>Welcome on the website of Fonzo, Botanical Experience, a gastronomic restaurant with a casual dining concept.</p>' +
         '<p>Please take a look at our menu first and choose one of our menu options before booking your table.</p>' +
-        '<p>We have limited seating so we recommend to book your table at least a few days in advance. Please also note that we can´t take reservations during service!</p>' +
+        '<p>We only work with reservations so please book at least 24h in advance so we can make the necessary preparations.</p>' +
         '<p>For the moment we can only offer tables for 2 persons. We have the following tables for 2 available:</p>' +
         '<p>Thursday till Sunday</p>' +
         '<p>Dinner: 18h00 - 19h00 - 20h00 - 21h00</p>' +
@@ -80,7 +80,7 @@
         'text.modal.book.title' : 'Reserva su mesa',
         'text.modal.book.body' : '<p>Bienvenido a la página web de Fonzo, botanical experience, un restaurante gastronómica con un concepto de casual dining.</p>' +
         '<p>Por favor consulta nuestra carta antes de reservar su mesa y elija uno del menú opciones.</p>' +
-        '<p>Tenemos poca mesas entonces recomendamos de reservar su mesa al menos con unos días de antelación. No podemos aceptar reservaciones durante nuestro servicio!</p>' +
+        '<p>Solo trabajamos con reservas, así que por favor reserve con al menos de 24h de antelación, para que podemos hacer las preparaciones necesarias.</p>' +
         '<p>Por el momento solo podemos ofrecer mesas para 2 personas. Se puede elegir entre las mesas para 2 personas siguientes:</p>' +
         '<p>Jueves a Domingo</p>' +
         '<p>Cena: 18h00 - 19h00 - 20h00 - 21h00</p>' +
